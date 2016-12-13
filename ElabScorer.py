@@ -9,7 +9,7 @@ License: CC-BY-SA
 '''
 from bs4 import BeautifulSoup
 
-file = open("591_set1_midterm_craps.html", "r", encoding="latin-1")
+file = open("591_set1_midterm_craps.html", "r", encoding="utf-8")
 bsObj = BeautifulSoup(file.read())
 
 stds = bsObj.findAll('a', {"class", "std_id"})
