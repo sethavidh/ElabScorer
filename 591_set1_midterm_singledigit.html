@@ -1,0 +1,7479 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us" >
+<head>
+<title>View Submission | E-labsheet</title>
+
+  <script type="text/javascript" src="/elab_media//js/jquery.js"></script>
+  <style type="text/css">
+      .grading
+      {
+          border: 1px solid gray;
+          margin: 5px;
+          padding: 5px;
+          display: none;
+      }
+      .scorebox
+      {
+          /* position: relative; bottom: 8px; */
+          background-color: #ffaaaa;
+          color: #ff0000;
+          font-weight: bold;
+          border: 1px solid red;
+          ! important;
+      }
+      .important
+      {
+          color: #ff0000;
+          font-weight: bold;
+      }
+  </style>
+
+<link rel="stylesheet" type="text/css" href="/elab_media//css/base.css" />
+</head>
+
+<body>
+    <div id="header">
+        <div class="info">
+          
+<div id="welcome">Welcome <b> </b>
+[101.109.196.130]</div>
+
+          <div id="menu">
+            
+
+[<a href="/elab/admin">Admin</a>]
+
+[<a href="/elab/accounts/logout/">Log out</a>]
+
+          </div>
+	</div>
+        <h1>
+            
+
+            <a href="/elab/">E-labsheet</a>
+             | <a href="/elab/instr/497/">01418114 Intro. to Comp. Exam. (for Exam only) [2559/1] Sec:Midterm 59 Set 1</a>
+
+        </h1>
+    </div>
+
+    
+
+    <!-- Content -->
+    <div id="content">
+        
+        
+<h1>View/Grade Assignments</h1>
+<p><a href="/elab/instr/assignments/497/">All Assignments</a></p>
+<b>Assignment:</b> Midterm 59 Set 1 &gt; ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY
+<button id="show-all-button">แสดงงานทั้งหมด</button>
+<input type="checkbox" id="auto-hide-checkbox" checked/>ซ่อนอัตโนมัติหลัง save<br/>
+<b>Number of submitted assignments:</b> 135 out of
+201 student(s)<br/>
+<ul>
+
+    
+    <li><a class="std_id" id="b5910406221" href="">
+        นายนิธิ หอมทอง (b5910406221)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 12:04:15
+            from 10.3.4.229.
+            Result: 
+  
+    
+      PASSED<img src="/elab_media//images/16-em-check.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [PPPPPPPPPP]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3374400/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">#Name : NITI HOMTHONG ID: 5910406221  PBCODE:TSUCY  ROOM: 302
+x=int(input(&quot;&quot;))
+c=0
+z=0
+if x&lt;=0:
+    print(&quot;ERROR&quot;)
+else:
+    while x!=0:
+            b=x%10
+            x=x//10
+            if b!=0:
+                c=b+c
+    if c&lt;=9:
+        print(c)
+    else:
+        while c!=0:
+            v=c%10
+            c=c//10
+            if v!=0:
+                z=z+v
+                if z&gt;9:
+                    c=z
+                    z=0
+        print(z)        
+                
+       </textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5710450588" href="">
+        นางสาวธนพร ฤกษ์โสภา (b5710450588)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 12:04:01
+            from 10.3.20.150.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [PP-PP-----]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3374393/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">a=int(input())
+i=0
+if a&lt;=99:
+        a1=a%10
+        b1=a//10
+        ab=a1+b1
+        print(ab)
+else:
+        while i&lt;=a:
+                if a&gt;=10000 and a&lt;=99999:
+                        a1=a%10
+                if a1&gt;=1000 and a1&lt;=9999:
+                        a2=a1%10
+                if a2&gt;=100 and a2&lt;=999:
+                        a3=a2%10
+                if a3&gt;=10 and a3&lt;=99:
+                        a4=a3%10
+                if a4&gt;=0 and a4&lt;=9:
+                        a5=a4
+                        suma=a1+a2+a3+a4+a5
+                        print(suma)
+        i=i+1
+        </textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5910406132" href="">
+        นางสาวณัชชา รุ่งรัตนวณิชย์ (b5910406132)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 12:02:42
+            from 158.108.226.34.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [PPPPPPPP--]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3374338/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">#Name:First-Name Last_Name ID: Nacha Rungratanawanith Problem Code:TSUCY Room:402
+num= int(input())
+one=0
+count=0
+
+while num&gt;=1:
+    fac=num%(10)
+    one=one+fac
+    num=num//10
+    
+if 0&lt;=one&lt;=9:
+    print(one)
+if one&gt;=10:
+    two=0
+    while one&gt;=1:
+        fac2=one%(10)
+        two=two+fac2
+        one=one//10
+    if two&lt;=9:
+        print(two)</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5710450537" href="">
+        นายณัชพล ธีรกระวีกุล (b5710450537)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 12:02:16
+            from 10.3.6.60.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [----------]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3374309/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">c=int(input())
+a=2
+i=3
+
+if i+a==c:
+   print(c)
+        </textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5710401951" href="">
+        นางสาวเมธาวี มหะพรหม (b5710401951)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 12:02:02
+            from 10.3.20.147.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [----------]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3374294/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">#Name:Methawee Mahaprom ID:5710401951 Problem code:TSUCY Room:404
+num=int(input(&#39;num:&#39;))
+num1=str(num)
+sum=0
+n=0
+sum1=0
+for i in num1 :
+    i=int(i)
+    sum=sum+i
+    print(sum)</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5710450871" href="">
+        นางสาวรวิวรรณ ชิตวิเศษ (b5710450871)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 12:01:50
+            from 10.3.6.31.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [P--PPPPP--]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3374287/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">#Name: Rawiwan Chitvises ID:5710450871 Problem Code:TSUCY Room:407
+
+n=int(input())
+sum=0
+sum1=0
+sum3=0
+if n&gt;0:
+    while True:
+        a=n%10
+        if a%10!=0:
+            sum=sum+a
+            n=n//10
+            if n==0:
+                q=sum%10
+                e=sum//10
+                sum3=q+e
+                print(sum3) 
+                break
+           
+if sum3&gt;=10:
+    while True:
+        m=sum%10
+        if m%10!=0:
+            sum1=sum1+m
+            sum=sum//10
+        if sum==0:
+            if sum1&gt;=10:
+                x=sum1%10
+                sum2=0
+                z=sum1//10
+                y=sum2+x
+                print(z)
+                break
+</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5710450561" href="">
+        นายเตชิต หยงสตาร์ (b5710450561)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 12:01:29
+            from 10.3.6.18.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [PPPPPPPP--]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3374261/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">n=int(input())
+sum=0
+sum1=0
+while n!=0:
+    a=n%10
+    sum=sum+a
+    n=n//10
+if sum&gt;=10:
+    while sum!=0:
+        b=sum%10
+        sum1=sum1+b
+        sum=sum//10
+    print(sum1)
+elif sum&gt;=1 and sum &lt;=9:
+    print(sum)</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5910400321" href="">
+        นายอชิร โรจนกร (b5910400321)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 12:00:49
+            from 10.3.20.49.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [----P--P--]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3374217/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">num = int(input())
+count = 1
+x = 0
+
+if num &gt; 0 :
+    while num//(10**(count-1)) &gt; 0 :
+        num = num%(10**count)-num%(10**(count-1))//10**(count-1)
+        x += num
+        count += 1
+    print(num)
+        </textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5910450212" href="">
+        นางสาวณัฏฐ์นรี นรเศรษฐกุล (b5910450212)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 12:00:48
+            from 10.3.4.225.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [----------]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3374215/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">u=int(input(&quot;number:&quot;))
+i=2
+t=3
+count=0
+u=i+t
+
+
+</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5810450539" href="">
+        นายกันต์ธีร์ อัศวรุจิกุล (b5810450539)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 12:00:41
+            from 10.3.6.219.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [PPPPPPPP--]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3374206/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">x = int(input())
+sum = 0
+d = 0
+
+while True:
+    z = x % 10
+    sum = sum+z
+    if x == 0 and sum &gt;= 10:
+        c = sum % 10
+        d = sum // 10
+        c = c+d
+        print(c)
+        break
+    elif x == 0 and sum &lt; 10 :
+        print(sum)  
+        break
+    elif x &lt; 0 and x &gt; - 10 :
+        x = x%-10
+        print(x)
+        break
+    elif x &lt; 0 and x &lt; -10 :
+        x = x%-10
+        x = x+-1
+        print(x)
+        break
+    x = x // 10</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5810402402" href="">
+        นางสาวจุฑามาศ พิมพิทักษ์ (b5810402402)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 12:00:38
+            from 10.3.20.154.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [----------]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3374203/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">#Name: Jutamat Pimpitak  ID: 5810402402 Problem Code: TSUCY Room: 404
+n=int(input())
+count=1
+a=0
+while count:
+    b=n%10
+    a=a+b
+    
+n=n//10
+count=count+1
+print(a)</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5810450105" href="">
+        นางสาวปาลภัสสร์ แจ้งชัด (b5810450105)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 12:00:07
+            from 10.3.4.210.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [----------]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3374163/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">x = int(input())
+n = 0
+a = 0
+while(x&gt;0):
+        a = x%10
+        if(a&gt;=0):
+                n = a+n
+        x = x//10  
+        if(n&gt;=10): 
+                c = n%10
+                if(c&gt;=0):
+                        n = c+n 
+                n = n//10
+        n = n+c
+print(n)</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5610450675" href="">
+        นางสาวมัณฑนา รอดจันทร์ (b5610450675)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 11:59:58
+            from 10.3.20.85.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [PPPPP-----]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3374153/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">#Mantana Rodjan 5610450675 TSUCY 406
+n=int(input())
+count=0
+i=0
+if n&gt;1:
+    k=str(n)
+    for i in k:
+        if int(i)%1==0:
+            count=count+int(i)
+            if int(i)%8==0:
+                    count=count-int(i)            
+    if count!=0:
+        print(count)   </textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5710450511" href="">
+        นางสาวญาณิชศา เสฏฐิภัทร (b5710450511)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 11:59:53
+            from 10.3.8.141.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [PPPPPPPP--]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3374146/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">#Name: Yanichsa Setthipat ID:5710450511 Problem Code:TSUCY Room:403
+
+n = int(input())
+if n &gt; 0:
+    m = 0
+    while True:
+        s = n%10
+        n = n//10
+        m = m + s 
+        if n == 0:
+            break
+    if m&gt;9:
+        d = 0
+        while True:
+            c = m%10
+            m = m //10
+            d = d + c
+            if m == 0:
+                break
+        print(d) 
+    else:
+        print(m)</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5910450476" href="">
+        นายปฏิมากร ถาวะรัตน์ (b5910450476)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 11:59:52
+            from 10.3.6.209.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [PPPPP---PP]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3374145/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off"># Patimakorn thawarattana 5910450476 TSUCY 402
+num = int(input())
+t = 0
+y = 0
+s = 0
+w = num
+while num &gt;= 0  :
+    u = w % 10
+    y = w //10
+    t = u + t
+    w = y
+    
+    if w == 0 and t &lt; 10 :
+        print ( t )
+        break
+    
+    if w == 0 and  t &gt;= 10 :
+        p =  t % 10
+        a = t // 10
+        s = p + s 
+        t = a
+        if a == 0 :
+            print (s)
+            break
+        </textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5610602181" href="">
+        นางสาวธนพร ศรีรัตน์ (b5610602181)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 11:59:51
+            from 10.3.20.161.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [-PPP-P----]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3374143/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">#Name: Thanaporn Srirat ID: 5610602181 Problem code :05 Room: 404
+n = int(input())
+count = 0
+total = 0 
+b = &#39;&#39; 
+if n &gt;= 1:
+    pass
+while n &gt; 1:
+        a = n%10
+        n = n//10
+        b = a+n
+        c = (b+b)-n 
+count += 1
+print(c)</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5910406418" href="">
+        นางสาวโรไวดา มะตารี (b5910406418)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 11:59:17
+            from 10.3.6.235.
+            Result: 
+  
+    
+      PASSED<img src="/elab_media//images/16-em-check.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [PPPPPPPPPP]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3374109/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">n=int(input())
+while n&gt;0 :
+    total=0
+    while n!=0 : 
+        x=n%10
+        total=x+total
+        n=n//10
+    if total&gt;=10 :
+        n=total
+    elif total&lt;10:
+        print(total)
+        n=0</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5810451781" href="">
+        นายปณิธาน สะอาด (b5810451781)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 11:59:16
+            from 10.3.20.88.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [PP-PP-----]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3374106/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">#Name:Panithan Sa-Ard ID:5810451781 Problem Code:KCWOY Room:406
+a=int(input())
+if a&gt;=0 and a&lt;=99 :
+    b=a//10
+    c=a%10
+    d=b+c
+    e=d//10
+    f=d%10
+    print(e+f)
+elif a&gt;=100 and a&lt;=999 :
+    z=a//100
+    y=a%100
+    x=z+y
+    w=x//10
+    v=x%10    
+    print(v+w)</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5910451081" href="">
+        นายนาวิน เหลืองทองคำ (b5910451081)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 11:59:02
+            from 10.3.4.18.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [PPPPPPPP--]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3374091/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">#นาวิน เหลืองทองคำ ID 5910451081 room 302 
+n=int(input())
+c=0
+i=0
+if n&gt;0 :
+    while n&gt; 0 :
+        x=n%10
+        n=n//10
+        c+=x
+        if n== 0:
+            if c&lt;10 : print(c)
+            else :
+                while c&gt;0 :
+                    z=c%10
+                    c=c//10
+                    i+=z
+                    if c==0 :
+                        print(i)
+else :
+    print(&quot;ERROR&quot;)
+            </textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5810402348" href="">
+        นางสาวกมลชนก คูณสวัสดิ์ (b5810402348)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 11:58:37
+            from 10.3.6.242.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [----------]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3374061/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">#Name: Kamonchanok Koonsawat ID:5810402348 Promblem Code:TSUCY Room:402
+
+n = int(input())
+
+if n &gt;= 0 :
+    t=0
+    
+    while n!=0 :
+        a = n%10
+        t = a
+        x = t+a
+        
+        
+        
+        
+    
+        if x &gt; 0 and x &lt; 9 :
+            total=x
+            print(total)
+        if x &gt; 9  :
+            r=0
+            while x &gt; 9 :
+                u = n%10
+                r = r+u
+                n = n//10
+            total = r %10
+            print(total)
+        n = n//10   </textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5810451560" href="">
+        นายธนิก อารยะวณิชกุล (b5810451560)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 11:57:53
+            from 10.3.20.43.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [----------]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3374016/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off"># Name:Thanick Arayawanichkul ID:5810451560 Problem Code:TSUCY Room:406</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5710602183" href="">
+        นางสาวฐิตินาฏ สิริวัฒนพงษ์ (b5710602183)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 11:57:41
+            from 10.3.8.148.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [----------]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3374004/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">num = int(input())
+count = 1
+sum_1 = 0
+while num&gt;=0 :
+       a = num%10
+       sum_1 = sum_1+a
+       num = num//10
+       if sum_1 &gt;= 10 :
+              sum_2 = 0
+              while sum_1 &gt;=10:
+                     b = sum_1%10
+                     sum_2 = sum_2+b
+                     sum_1 = sum_1//10
+                     print(sum_1+sum_2)
+       else:
+              print(sum_1)
+            </textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5910406043" href="">
+        นางสาวกุสุมา ลิ้มรุ่งเรือง (b5910406043)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 11:57:26
+            from 10.3.4.28.
+            Result: 
+  
+    
+      PASSED<img src="/elab_media//images/16-em-check.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [PPPPPPPPPP]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3373993/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off"># Name: Kusuma Limrungruang ID: 5910406043 Problem Code: TSUCY Room: 302
+
+n=int(input())
+sum=0
+if n&gt;=0 :
+    while n&gt;0 :
+        x=n%10
+        n=n//10
+        sum=sum+x
+    while (sum//10)&gt;0 :
+        n=sum
+        sum=0
+        while n&gt;0 :
+            x=n%10
+            n=n//10
+            sum=sum+x
+    print(sum)</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5910406442" href="">
+        นายวัชระ ดวงเนตร์ (b5910406442)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 11:57:24
+            from 10.3.4.43.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [PPPPPPPP--]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3373991/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">#Name:Watchara Daungnate ID:5910406442 Problem Code:TSUCY Room:302
+n=int(input())
+x=0
+t=0
+a=0
+b=0
+count=0
+while n&gt;0 :
+    x=n%10
+    n=n//10
+    t=t+x
+    count=count+1
+if n&lt;0:
+    print(&quot;ERROR&quot;)
+elif t&lt;10:
+    print(t)
+else:
+    c=t
+    a=c%10
+    c=c//10
+    b=c+a
+    print(b)
+</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5610450390" href="">
+        นางสาวกนกวรรณ มหุวัน (b5610450390)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 11:56:52
+            from 10.3.4.37.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [----------]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3373956/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">n=int(input())
+if n&gt;1:
+    n=n+a</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5910406141" href="">
+        นางสาวณิชมน รุ่งเรือง (b5910406141)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 11:55:46
+            from 10.3.20.23.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [P--PP-----]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3373893/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">#Name:Nichamon Rungrueang ID:5910406141 Problem: KCWOY Room: 404
+import math
+num=int(input())
+if num &lt;= 9 :
+    print(num)
+else :
+    if num%10 :
+        a=num%10
+    if num//10 or num//100 or num//1000 or num//10000 or num//100000 or num//1000000 :
+        b=math.floor(num//10)
+        c=math.floor(num//100)
+        d=math.floor(num//1000)
+        e=math.floor(num//10000)
+        f=math.floor(num//100000)
+        g=math.floor(num//1000000)
+    print(a+b+c+d+e+f+g)</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5910450140" href="">
+        นายฉัตริน เผดิมวงศ์ (b5910450140)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 11:55:42
+            from 10.3.20.109.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [PPPPPPPP--]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3373890/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">#Chattarin Pardermwong 5910450140 TSUCY 406
+x = int(input())
+a = 0
+z = 0
+if x &gt;= 0:
+    while x != 0:
+        y = x%10
+        a += y
+        x = x//10
+    if a//10 == 0:
+        print(a)
+    elif a//10 != 0:
+        while a != 0:
+            z += a % 10
+            a = a//10
+        if z//10 == 0:
+            print(z)
+        else:
+            a = z
+            if z//10 == 0:
+                print(z)
+            else:
+                a = z</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5910406345" href="">
+        นายพิชัยยุทธ เหมะสิขัณฑกะ (b5910406345)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 11:55:21
+            from 10.3.6.29.
+            Result: 
+  
+    
+      PASSED<img src="/elab_media//images/16-em-check.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [PPPPPPPPPP]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3373869/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">num = int(input())
+i = 0
+a = []
+box = 0
+sum = 0
+sum2= 0
+while  i != &#39;s&#39; :
+    pos = num % 10 
+    sum = sum + pos
+    num = num //10 
+    if num &lt; 1 :
+        i = &#39;s&#39;
+if sum &lt; 10 and sum &gt; 0:
+    print(sum)
+else :
+    i2 = 0
+    while sum &gt;= 10 :
+        while  i2 != &#39;s&#39; :
+            pos2 = sum % 10 
+            sum2 = sum2 + pos2
+            sum = sum //10 
+            if sum &lt; 1 :
+                i2 = &#39;s&#39; 
+            a = sum2
+            sum3 = 0
+            i3 = 0
+            while a &gt;= 10 :
+                while  i3 != &#39;s&#39; :
+                    pos3 = a % 10 
+                    sum3 = sum3 + pos3
+                    a = a //10 
+                    if a &lt; 1 :
+                        i3 = &#39;s&#39;
+            if sum3 &lt; 10 and sum3 &gt; 0:
+                print(sum3)
+                        
+if sum2 &lt; 10 and sum2 &gt;0: 
+    print(sum2)
+</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5910450581" href="">
+        นางสาวพิมพ์วิมล สุระเสถียร (b5910450581)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 11:55:13
+            from 10.3.6.45.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [----P-----]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3373864/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">n=int(input())
+print(n)</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5810450911" href="">
+        นางสาวพิณพร ญาณวโรภาส (b5810450911)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 11:55:03
+            from 10.3.9.63.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [PPPPPPPP--]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3373851/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">number = int(input(&quot;&quot;))
+
+n = 0
+c = 0
+
+
+if number &gt;= 0:
+    number = str(number)
+    while n &lt; len(number):
+        a = number[n]
+        c += int(a)
+        n += 1
+
+c = str(c)
+c2 = 0
+n2 = 0
+
+if int(c) &gt;= 0:
+    if len(c) &gt;= 2:
+        while n2 &lt; len(c):
+            b = c[n2]
+            c2 += int(b)
+            n2 += 1
+        if c2 == 10:
+            print(1)
+        else:
+            print(c2)
+    else:
+        print(c)</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5810400531" href="">
+        นางสาวเกศมณี หมวดเมือง (b5810400531)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 11:54:50
+            from 10.3.4.233.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [PPPPP-----]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3373843/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">#Name:Kesmani Muadmueng ID:5810400531 Problem Code:TSUCY Room:302
+num=int(input(&quot;&quot;))
+b=0
+z=1
+if num &gt;= 0 :
+    while num !=0   :
+        a=num % 10
+        num=num//10
+        b=b+a
+        if b &gt; 9 and num ==  0 :
+            num == b
+    #print(b)
+    
+    #if b &gt; 9 :
+        #b = num 
+        #while num != 0 :
+                #a=num % 10
+                #b=b+a
+                #num=num//10   
+    print(b)
+      </textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5810400566" href="">
+        นางสาวณัฐิยา สมหมาย (b5810400566)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 11:54:37
+            from 10.3.20.125.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [----------]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3373824/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">#ณัฐิยา สมหมาย ID: 5810400566 Problem code: TSUCY Room: 406
+i = 1
+sumx = 0
+while i &gt;= 1 :
+    x = int(input())
+    y = x%(10**i)
+    a = x - (y*i)
+    z = a//(10**i)
+    sumx = sumx + (z + y)
+    #sumx = sumx + x
+    print(sumx)
+    i = i + 1
+    #print(z)</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5910401033" href="">
+        นางสาวฑิฆัมพร สิมอุด (b5910401033)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 11:54:30
+            from 10.3.8.155.
+            Result: 
+  
+    
+      PASSED<img src="/elab_media//images/16-em-check.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [PPPPPPPPPP]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3373819/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off"># Name: Thikamporn Simud ID:5910401033 Problem Code:TSUCY5 Room: 403
+n=int(input())
+if n&gt;=0:
+    count=1
+    result=0
+    while n!=0:
+        n_2=n%10
+        n=n//10
+        result=result+n_2
+        count=count+1
+    if result&lt;=9:
+        print(result) 
+    else:
+        n=result
+        result=0
+        count=1
+        while n!=0:
+            n_2=n%10
+            n=n//10
+            result=result+n_2
+            count=count+1 
+        if result&lt;=9:
+            print(result) 
+        else:
+            n=result
+            result=0
+            count=1
+            while n!=0:
+                n_2=n%10
+                n=n//10
+                result=result+n_2
+                count=count+1             
+            print(result)
+ 
+
+    
+    
+        
+    </textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5910450115" href="">
+        นายจิตริน พนิตดิเรก (b5910450115)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 11:53:19
+            from 10.3.4.87.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [----------]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3373752/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">#Name: Jitrin Panitdirake ID:5910450115 Problem Code:TSUCY Room:302
+
+n = int ( input( ))
+
+while True :
+    count=1
+    if n&gt;9:
+        Rn = n%(10)
+        Sum_n = n+Rn
+        if Sum_n &gt; 9 :
+            Sum_n2 = Sum_n%(10)
+            print(Sum_n2)
+        elif Sum_n&gt;=0 and Sum_n&lt;=9:
+            print(Sum_n)
+    elif n&gt;=0 and n&lt;=9:
+        print(n)
+        </textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5810601863" href="">
+        นางสาวนันทวัน แย้มสวัสดิ์ (b5810601863)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 11:52:48
+            from 10.3.20.65.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [PPPPPPPP--]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3373727/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">#Nanthawan Yaemsawat 5810601863 TSUCY 406
+num=int(input())
+if num&lt;0:
+    pass
+else:
+    b=0
+    while num&gt;=0:
+        x=num%10
+        b=x+b
+        num=num//10
+        if num==0 :
+            break
+    if b//10==0:
+        print(b)
+    else: 
+        c=0
+        while b//10&gt;=0 :
+            x=b%10
+            c=x+c
+            b=b//10
+            if b==0 :
+                break
+     
+            
+         
+                       
+       
+        print(c)</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5910406051" href="">
+        นางสาวเกวลี บุณยะมาลย์ (b5910406051)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 11:52:45
+            from 10.3.4.21.
+            Result: 
+  
+    
+      PASSED<img src="/elab_media//images/16-em-check.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [PPPPPPPPPP]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3373724/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">#name:kewalee Boonyamarn ID:5910406051 Problem Code:TSUCY Room:302
+p=int(input())
+keep=0
+g=0
+su=0
+r=0
+t=0
+if p&gt;=0: 
+    if p&gt;=0:
+        while p!=0:
+            keep=p%10
+            g=keep+su
+            su=g
+            p=p//10
+    if g&gt;=10:  
+            p=g
+            g=0
+            su=0
+            keep=0
+            while p!=0:
+                keep=p%10
+                g=keep+su
+                su=g
+                p=p//10
+            if g&gt;=10:  
+                    p=g
+                    g=0
+                    su=0
+                    keep=0
+                    while p!=0:
+                        keep=p%10
+                        g=keep+su
+                        su=g
+                        p=p//10              
+    print(g)  </textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5910406361" href="">
+        นางสาวภวิตรา ภู่กิดาการ (b5910406361)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 11:52:02
+            from 10.3.9.69.
+            Result: 
+  
+    
+      PASSED<img src="/elab_media//images/16-em-check.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [PPPPPPPPPP]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3373682/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">#Name:Pawitra Pookidakan ID:5910406361 Problem Code: Room:409
+num=int(input(&quot;&quot;))
+total=0
+totall=0
+if num&gt;0:
+   while True:
+      a=num%10
+      num=num//10
+      total=total+a
+      if num==0:
+         if total%10!=0 or total==10 or total==20 or total==30 or total==40 or total==50 or total==60 or total==70 or total==80 or total==90 :
+            while True:
+               b=total%10
+               total=total//10
+               totall=totall+b
+               if total==0:
+                  if totall&gt;=10:
+                     total=totall
+                     totall=0
+                     continue                  
+                  print(totall)
+                  break
+            break</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5910401165" href="">
+        นายสันติภพ เสนาเทศ (b5910401165)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 11:51:17
+            from 10.3.4.185.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [PPPP-PPPPP]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3373642/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off"># Name: Santiphop Senathes ID: 5910401165 Problem code: TSUCY Room: 303
+x = int(input())
+sum = 0
+result = 0
+last = 0
+if x &lt; 10 and x &gt;= 1 :
+    result = x
+elif x &gt;= 10 and x &gt;= 1 :
+    while True :
+        if x &lt; 10 :
+            break
+        while True :
+            y = x % 10
+            sum = y + sum
+            x = x // 10
+            if x == 0 :
+                
+                break
+        while True :
+            z = sum % 10
+            result = z + result
+            sum = sum // 10
+            
+            if sum == 0 :
+                break
+        while True :
+            a = result % 10
+            last = a + last
+            result = result //10
+            if result ==0 :
+                break
+print(last)</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5910450336" href="">
+        นายธนรักษ์ วงษ์กิติคุณ (b5910450336)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 11:51:05
+            from 10.3.4.110.
+            Result: 
+  
+    
+      PASSED<img src="/elab_media//images/16-em-check.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [PPPPPPPPPP]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3373624/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off"># Name: tanarak wongkitikun ID: 5910450336 Problem Code: TSUCY Room: 302  
+n = int(input())
+while True :
+    carry_sum = 0
+    while True :
+        n_carry = n % 10
+        carry_sum = carry_sum + n_carry
+        n = n//10
+        if n == 0 :
+            break
+    if carry_sum &gt; 9 :
+        n = carry_sum
+    else :
+        break
+print(carry_sum)
+</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5910406086" href="">
+        นายจารุวิทย์ ทรัพย์สวนแตง (b5910406086)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 11:50:41
+            from 10.3.6.58.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [-----PPP--]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3373596/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">num=str(int(input()))
+x=len(num)
+z=x-1
+total=0
+while z&gt;=0 :   
+    total=total+int(num[z])
+    z=z-1
+c=str(total)
+a=len(c)
+b=a-1
+if a&gt;1 :
+    total2=0
+    while a&gt;=1 :
+        total2=total2+int(c[b])
+        b=b-1
+        a=a-1
+print(total2)
+    </textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5810400574" href="">
+        นางสาวณัฑฐาพร อ่อนคำ (b5810400574)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 11:50:38
+            from 10.3.6.43.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [PPPPPPPP--]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3373591/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">n = int(input())
+
+x = 0
+z = 0
+sumx = 0
+
+if (n&lt;0):
+    print(&quot;ERROR&quot;)
+else:
+    while (x&gt;=0 and n&gt;0):
+        y = n%10
+        n = n//10
+        sumx = sumx + y
+        x = x + 1
+    sumx = sumx
+sumx = sumx
+if (sumx&gt;=10):
+    a = sumx
+    sumn = 0
+    while (z&gt;=0 and a&gt;0):
+        y = a%10
+        a = a//10
+        sumn = sumn + y
+        z = z + 1
+    sumn = sumn
+elif (sumx&lt;10):
+    sumn = sumx
+print(sumn)</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5810450164" href="">
+        นางสาวสิริวดี พัทศุระพงษ์ (b5810450164)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 11:50:03
+            from 10.3.4.195.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [----------]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3373564/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">a = int(input())
+sum = 2**a
+while sum &gt;= a :
+    a = sum+b
+    while d&gt;=0:
+        d = b+a</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5810451314" href="">
+        นายจารุวิทย์ โพธิไสย (b5810451314)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 11:50:03
+            from 10.3.4.236.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [----------]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3373563/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">#Name:Jaruvit Potisai ID:5810451314 Problem Code:NPEMT Room:302
+n = int(input())
+x = int(input())
+c = n + x  
+if c &gt; 0:
+    print(&quot;5&quot;)
+elif c &gt; 9:
+    c = n + x
+print(&quot;4&quot;)
+    </textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5910450441" href="">
+        นางสาวนิรชา ศรยิงไกล (b5910450441)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 11:49:42
+            from 10.3.6.51.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [----------]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3373548/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">num = int(input())
+if sum &gt;9 :
+    sum= &quot;num&quot;+&quot;num&quot;
+    print(sum)
+else:
+    while sum &lt;9 :  
+        if sumB = &quot;sum&quot;+sum :
+            print(sumB)
+    count = count+1
+print(count)</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5910401076" href="">
+        นายบุญญโชติ ศรีเจริญธรรม (b5910401076)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 11:49:18
+            from 10.3.4.188.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [PPPPPPP---]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3373530/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">a=0
+b=0
+y=0
+q=0
+w=0
+n=int(input())
+if n&gt;0:
+    while n!=0:
+        x=n%10
+        a=x+a
+        n=n//10
+    if a&gt;9:
+        while a!=0:
+            y=a%10
+            b=y+b
+            a=a//10
+        if b&lt;9:
+            print(b)
+        else:
+            pass
+    else:
+        print(a)</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5910450131" href="">
+        นายจิรายุส ตันติกรัณย์ (b5910450131)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 11:47:51
+            from 10.3.4.139.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [----------]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3373451/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">a = int(input())
+b = int(input())
+d= 0
+count = 0
+while a &lt; 1 or a &gt;7 or b &lt; 1 or b &gt; 7:
+    print(&quot;ERROR&quot;)
+    a = int(input())
+    b = int(input())    
+if a + b == 7 or a + b == 11 :
+    print(&quot;1 %d W&quot;%(a+b))
+elif a + b == 2 or a+b == 3 or a+b == 12 :
+    print(&quot;1 %d L&quot;%(a+b))
+elif a+b == 4 or a+b == 5 or a+b == 6 or a+b == 8 or a+b == 9 or a+b ==10:
+    c = a+b
+    while a+b != c:
+        a = int(input())
+        b = int(input())
+        d = d + a+b
+        count = count +1
+        if d == 7 :
+            print(&quot;%d %d %s&quot;% (count,d,L))
+        elif a + b ==c :
+            print(&quot;%d %d %d&quot;%(count,a+b,W))</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5810452388" href="">
+        นางสาวปภัสราภรณ์ จีนพุก (b5810452388)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 11:46:30
+            from 10.3.4.133.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [PPPP-P----]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3373380/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">#Name Paphassaraporn Jeenpuk ID: 5210452388 Problem Code: TSUCY Room: 302
+
+n = int(input())
+if n &gt; 0 and n &gt; 9 and n&lt;99:
+    print(n//10 + n%10)
+elif n &gt; 99 and n &lt; 999 :
+    a_1 = n // 100
+    b_1 = n -100*a_1
+    c_1 = b_1 //10
+    d_1 = b_1 - 10*c_1
+    e_1 = d_1 // 1
+    y = a_1 + c_1 +e_1
+    print(y//10 + y%10)
+    
+elif n &gt;999 and n &lt;9999:
+    a_2 = n//1000
+    b_2 = n -1000*a_2
+    c_2 = b_2 // 100
+    d_2 = b_2 - 100*c_2
+    e_2 = d_2 // 10
+    f_2 = d_2 -10*e_2
+    i_2 = f_2// 1
+    z = a_2 + c_2 + e_2 + i_2
+    print(z//10 + z%10)
+
+    
+elif n &gt;999 and n &lt;99999:    
+    a = n//10000
+    b = n - 10000*a
+    c = b //1000
+    d = b - 1000*c
+    e = d // 100
+    f = d - 100*e
+    i = f // 10
+    j = f - 10*i
+    x = a+c+e+i+j
+    print(x//10 + x%10)</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5910450697" href="">
+        นายรัชชานนท์ อินทร์ทิพย์ (b5910450697)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 11:45:59
+            from 10.3.20.67.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [PPPPPPPP--]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3373347/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">a = int(input())
+i = 0
+ans = 0
+if a &gt; 0:
+    while a &gt; 0:
+        b = a%10
+        a = a//10
+        if b &gt;=0:
+            i = b+i
+    if i &lt;10:
+        print(i)
+    else:
+        while i &gt;0:
+            ii = i%10
+            i = i//10
+            if ii &gt;= 0:
+                ans = ii + ans
+        print(ans)
+else:
+    pass</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5910450158" href="">
+        นางสาวชนิษฐา ยงมั่นคงกุล (b5910450158)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 11:45:53
+            from 10.3.4.22.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [----------]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3373337/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">x = int(input( ))
+n = 0
+y = 0
+while n &lt;= x :
+    x = x // 10
+    x = x % 10
+    y = y + x
+    n = n + 1
+    print(y)</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5910401084" href="">
+        นางสาวปทุมมาศ ตุ๋ยเจริญ (b5910401084)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 11:45:52
+            from 10.3.20.156.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [----------]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3373333/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">#Name:PatummasTuycharoen ID:5910401084 Problem Code:TSUCY Room:406
+number=int(input(&quot;Enter number: &quot;))
+count=0
+if number==0:
+    print(0)
+elif number&gt;0:   
+    while True:
+        if number&lt;10 and number%number==0:
+            count=count+number
+            break
+        else:
+            x=number%10
+            count=count+x
+        number=number//10
+    m=count
+    if m&gt;9:
+        i=0
+        while True:
+            if m&lt;10 and m%m==0:
+                i=i+m
+                break
+            else:
+                x=m%10
+                i=i+x
+            m=m//10        
+        print(i)
+    else:
+        print(count)</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5710450502" href="">
+        นายชูดิษฐ์ นพกุลสถิตย์ (b5710450502)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 11:45:26
+            from 10.3.6.55.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [----------]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3373307/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">a=int(input())</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5610450497" href="">
+        นางสาวชิษณุชา จิณรักษ์ (b5610450497)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 11:44:32
+            from 10.3.6.198.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [----------]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3373264/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">a=3
+b=5
+c=int(input())
+d=(c//3)&gt;=5
+e=(c//5)==3
+if d and c//5:
+    print(d , (c//5))
+elif c//5:
+    print(c//5)
+else:
+    print(d , e)</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5910451162" href="">
+        นายภาส รังสีบริรักษ์ (b5910451162)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 11:43:48
+            from 10.3.20.101.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [PPPPPP----]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3373240/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">#Name: Phat Rungsiborirak ID:5910451162  Problem Code : TSUCY Room :406
+num = int(input())   
+count = 0
+mod = 10
+slad = 1
+n = 0
+if num &gt; 0 :
+    while count &lt;= num:
+        x = (num % mod) // slad
+        mod = mod * 10
+        slad = slad * 10
+        n = n + x
+        count1 = 1
+        n1 = 0
+        mod1 = 10
+        slad1 = 1
+        while count1 &lt;= n:
+            x = (n % mod1) // slad1
+            mod1 = mod1*10
+            slad1 = slad1*10
+            n1 = n1 + x
+            count1 = count1 + 1
+        n=n1
+        count = count + 1
+    print(n)</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5910406264" href="">
+        นางสาวปุลรมิดา เพชรพวง (b5910406264)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 11:43:35
+            from 10.3.6.35.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [PP-PP-----]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3373227/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">#Name: punramida petchpuang ID:5910406264 Problem Code : TSUCY Room:407
+n = int(input())
+sum1 = 0
+sum2 = 0
+sum = 0
+sumN = 0
+if n &gt; 0 :
+    while n &gt; 0 :
+        sum1 = n%10 
+        sum = sum1+sum
+        sum2 = n//10
+        sum = sum1+sum2
+        print(sum)
+        break
+    if sum &gt;= 10 :
+        while sum &gt;= 10 :
+            sumN = sum%10
+            sum = sumN+sum
+            sumN2 = sum//10
+            sum = sumN + sumN2
+            print(sum)</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5710401811" href="">
+        นางสาวเบญญาภา กองแก้ว (b5710401811)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 11:42:44
+            from 10.3.8.161.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [PPPPPPPP--]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3373174/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">#Name: Benyapa Kongkaew ID:5710401811 Problem Code: TSUCY Room:403
+n=int(input())
+if n&lt;100 and n&gt;=0:
+    i=0
+    m=0
+    while n&gt;0:
+        a=n%10
+        b=n//10
+        n=b    
+        i=i+a    
+        if i&gt;m:
+            m=i
+    print(m)
+elif n&gt;100:
+    i=0
+    m=0
+    while n&gt;0:
+        a=n%10
+        b=n//10
+        n=b    
+        i=i+a    
+        if i&gt;m:
+            m=i
+    j=0
+    mm=0
+    while m&gt;0:
+        c=m%10
+        d=m//10
+        m=d
+        j=j+c
+        if j&gt;mm:
+            mm=j
+    print(mm)
+
+   
+    
+    
+
+    
+
+    </textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5810402381" href="">
+        นางสาวกาญจนา แว่นแก้ว (b5810402381)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 11:42:17
+            from 10.3.6.143.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [PPPPPPPP--]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3373148/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">a = int(input(&quot;&quot;))
+b = 0
+x = 0
+
+while a != 0 :
+    if a &gt; 0  :
+        t = a%10
+        a = a//10
+        b = b + t
+if b &lt; 10 :
+    print(b)
+elif b &gt; 9 :
+    while b &gt; 9 :
+        if b &gt; 9 :
+            t = b%10
+            b = b//10
+            x = b + t
+    print(x)</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5910450247" href="">
+        นายณัฐพล ชินะรังษี (b5910450247)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 11:42:07
+            from 10.3.20.127.
+            Result: 
+  
+    
+      PASSED<img src="/elab_media//images/16-em-check.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [PPPPPPPPPP]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3373138/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off"># Name: Natthapon Chinarangsi ID: 5910450247 Problem Code: TSUCY Room: 406
+number=int(input())
+if number&gt;0:
+    sum=0
+    while True:
+        while number&gt;0:
+            sum+=number%10
+            number=number//10
+        if sum&gt;=10:
+            number=sum
+            sum=0
+        else:
+            break
+    if sum&lt;10:
+        print(sum)</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5810450679" href="">
+        นางสาวฐิติญา เจียรนัยเจริญ (b5810450679)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 11:40:46
+            from 10.3.4.118.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [----------]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3373084/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">n = int(input())
+b = str(int(n+n))
+print(b)</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5910450271" href="">
+        นางสาวเตชินี คำเพ็ง (b5910450271)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 11:38:38
+            from 10.3.4.117.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [----------]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3372995/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off"></textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5710450065" href="">
+        นางสาวรัฐิยาภรณ์ จารุภาค (b5710450065)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 11:37:34
+            from 10.3.4.40.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [----------]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3372943/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">n=int(input())
+count=0
+for i in n:
+    if n%i==0:
+        count+=1
+        print(&quot;count&quot;)</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5910451006" href="">
+        นางสาวจิตี ชีวพันธ์ (b5910451006)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 11:33:38
+            from 10.3.4.66.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [PPPPP-----]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3372782/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">#Name: Jitee Cheewapun ID: 5910451006 Problem Code:TSUCY Room: 302
+n = int(input())
+re = 0
+
+if n&gt;0:
+    while True:
+        total = n%10
+        n = n//10
+        re+=total
+        if n == 0 and re&lt;10:
+            print(re)
+            break
+        elif n==0 and re&gt;=10:
+            n=re
+                      
+            
+        
+         
+
+        
+        
+        
+        
+            
+    </textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5810452086" href="">
+        นางสาวศรุตา ภูมิโชติ (b5810452086)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 11:33:30
+            from 10.3.6.77.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [PP-PP-----]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3372775/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">x = int(input())
+y=x//10000
+z=x%10000
+A=x//1000
+B=x%1000
+C=x//100
+D=x%100
+E=x//10
+F=x%10
+G=y+A+C+E+F
+print(G)
+
+
+</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5810601839" href="">
+        นางสาวชญานิศ มานพ (b5810601839)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 11:32:41
+            from 10.3.6.240.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [PP-PP-----]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3372741/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">n = int(input(&quot;&quot;))
+sum = 0
+count = 1
+while count == 1 :
+    a = n % 10
+    n = n//10
+    sum = sum+a
+    print(a+n)
+    count = count + 1</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5810451608" href="">
+        นางสาวธารธิกา ชวดชุม (b5810451608)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 11:32:19
+            from 10.3.20.151.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [PPPPPPPP--]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3372729/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">#Name: Tantika Choudchum ID:5810451608 Problem Code: TSUCY Room: 404
+n = int(input(&quot;&quot;))
+
+a = n%10
+b = 0
+while n !=0:
+    b = b+a
+    n = n//10
+    a = n%10
+if b&gt;=10:
+    d = b%10
+    e = 0
+    while b !=0:
+        e = e+d
+        b = b//10
+        d = b%10  
+    print(e)
+else:
+    print(b)
+    </textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5910450107" href="">
+        นายจตุภัทร จิระประไพ (b5910450107)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 11:30:38
+            from 10.3.6.21.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [----------]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3372649/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">print(&quot;ERROR&quot;)</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5810601944" href="">
+        นายศรัณย์ พรศักดิ์ธนากูล (b5810601944)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 11:28:46
+            from 10.3.20.158.
+            Result: 
+  
+    
+      PASSED<img src="/elab_media//images/16-em-check.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [PPPPPPPPPP]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3372550/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">#Name: Sarun Pornsukthanakul ID: 5810601944 Problem Code: TSUCY Room : 404
+x = int(input())
+y= 0
+total = 0
+if x &lt;= 0 :
+    print(&quot;ERROR&quot;)
+else :
+    while x&gt;0:
+        if x&gt;0 :
+            y = x%10
+            x = x//10
+            total = total+y
+            while total&gt;9:
+                if total&gt;9 :
+                    y = total%10
+                    total = total//10
+                    total = total+y
+    print(total)</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5910400401" href="">
+        นางสาวเบญญาภา น้อยนวล (b5910400401)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 11:27:41
+            from 10.3.4.19.
+            Result: 
+  
+    
+      PASSED<img src="/elab_media//images/16-em-check.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [PPPPPPPPPP]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3372506/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">#Name:Benyapa Noinuan ID: 5910400401 Problem Code: TSUCY Room: 302
+c=0
+d=0
+sum=0
+num=int(input())
+if(num&lt;=0):
+    print(&quot;ERROR&quot;)
+if(num&gt;0):
+    while(num&gt;0):
+        a=num%10
+        if(a&lt;10):
+            sum=sum+a
+        num=num//10
+    if(sum&lt;10):
+        print(sum)
+    if(sum&gt;=10):
+        while(sum&gt;0):
+            b=sum%10
+            if(b&lt;10):
+                c=c+b
+            sum=sum//10
+        if(c&lt;10):
+            print(c)
+        if(c&gt;=10):
+            while(c&gt;0):
+                e=c%10
+                if(e&lt;10):
+                    d=d+e
+                c=c//10
+            print(d)</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5810452108" href="">
+        นายศิริพงษ์ กอบกุลสุวรรณ (b5810452108)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 11:27:14
+            from 10.3.20.94.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [PPPPPP----]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3372484/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">#Name:Siripong kobkulsuwan ID:5810452108 Problem Code:TSUCY Room:406
+
+x = int(input())
+
+if (x &gt;= 0 ):
+    x = x
+    if (x &gt;= 0 or x&lt;10):
+        y = x
+    if (x &gt;=10 or x&lt;=99):
+        y = (x//10)+(x%10)
+    if (x &gt;= 100 or x&lt;=999):
+        y = x//100+((x%100)//10)+x%10
+    if (x &gt;= 1000 or x&lt;=9999):
+        y = x//1000+((x%1000)//100)+((x%100)//10)+x%10
+    if (x &gt;= 10000 or x &lt;=99999):
+        y = x//10000+((x%10000)//1000)+((x%1000)//100)+((x%100)//10)+x%10
+    if (y &gt;= 10 and y&lt;=99 ):
+        e = (y//10)+(y%10)
+        print (e)
+    else:
+        print (y)
+else:
+    print (x)</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5810402615" href="">
+        นางสาวโมธนา ชิณโคตร (b5810402615)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 11:25:13
+            from 10.3.4.163.
+            Result: 
+  
+    
+      PASSED<img src="/elab_media//images/16-em-check.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [PPPPPPPPPP]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3372414/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">#Name:Motana Chinakotr ID:5810402615 Problem Code:TSUCY ROOM:303
+n = int(input())
+i = 1
+j = 1
+while j&gt;0:
+    k=0
+    while i&gt;0:
+        m = n%(10**i)
+        n = n-m
+        m = m//(10**(i-1))
+        k = k+m
+        if n == 0:
+            break
+        i = i+1
+    if k&lt;10:
+        print(k)
+        break
+    if k&gt;=10:
+        n = k
+        j = 1
+        i=1
+    j = j+1</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5910406302" href="">
+        นางสาวพรรณกาญจน์ ปิ่นศรีเพ็ชรกูล (b5910406302)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 11:25:08
+            from 10.3.9.20.
+            Result: 
+  
+    
+      PASSED<img src="/elab_media//images/16-em-check.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [PPPPPPPPPP]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3372410/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off"># Name:Pannakarn Pinsripetchkul ID:5910406302 Problem code:TSUCY Room:409
+
+num = int(input())
+
+x = 0
+y = 0
+z = 0
+
+if num&lt;0 :
+    print(&quot;ERROR&quot;)
+else :
+    while num!=0 :
+        numm = num%10
+        x = x+numm
+        num = num//10
+    if x &gt; 9 :    
+        while x!=0 :
+            x2 = x%10
+            y = y+x2
+            x = x//10
+        if y &gt; 9 :
+            while y!=0 :
+                y2 = y%10
+                z = z+y2
+                y = y//10
+            print(z)
+        else :
+            print(y)
+    else :
+        print(x)</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5810601928" href="">
+        นางสาวลัดดาวัลย์ แก่งอินทร์ (b5810601928)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 11:24:45
+            from 10.3.9.68.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [----------]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3372394/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">count=1
+while count&gt;1:
+    n=int(input())
+    count=count+1
+    if n&gt;0:
+        x=n%10
+        y=n//10
+        z=x+y     
+        print(z)</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5910402609" href="">
+        นางสาวณัฐกุล ม่วงมณี (b5910402609)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 11:23:56
+            from 10.3.20.159.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [PPPPPPPP--]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3372370/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">#Nuttakul Muangmanee ID:5910402609 Problem Code:TSUCY Room:404
+n=int(input())
+sum=0
+c=0
+if n==0:
+    print(&quot;0&quot;)
+elif n&gt;0:    
+    while n!=0: 
+        n1=n%10
+        #print(n1)
+        n=n//10
+        sum=sum+n1
+        c+=1
+    a=sum
+    if 0&lt;a&lt;=9:
+        print(a)
+    else:
+        b=0
+        s=0
+        while a!=0:
+            a2=a%10
+            #print(a2)
+            a=a//10
+            s=s+a2 
+            b+=1
+        t=s
+        if 0&lt;t&lt;=9:
+            print(s)
+        else:
+            x=0
+            su=0
+            while t!=0:
+                t2=t%10
+                #print(a2)
+                t=t//10
+                su=su+t2 
+                x+=1        
+                print(su)   
+            m=su
+            if 0&lt;m&lt;=9:
+                print(m)
+            else:
+                y=0
+                summ=0
+                while m!=0:
+                    to2=m%10
+                    #print(a2)
+                    m=m//10
+                    summ=summ+to2
+                    y+=1        
+                    print(summ)                
+        </textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5710401889" href="">
+        นางสาวภัทรา ทัศนงาม (b5710401889)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 11:23:35
+            from 10.3.20.113.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [----P-----]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3372358/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">n=int(input())
+s=str(n)
+c=0
+for i in s:
+        i=int(n)
+        c=c+i
+        if i&gt;=0:
+                print(c)
+    </textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5810402470" href="">
+        นายธนธรณ์ น้อมพิทักษ์เจริญ (b5810402470)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 11:23:17
+            from 10.3.9.87.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [----------]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3372346/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">g=0
+count=2
+i=2
+while True:
+    x=int(input())
+    if x&gt;0:
+        z=(x%(10**(i-1)))
+        m=(z//(10**(i-2)))
+        i=i+1
+        q=m+g
+        if q&gt;10:
+            print(z)
+        if q&lt;=10:
+            m=(z%(10**(i-1)))//(10**(i-2))
+            i=i+1
+            m=m+g
+                       </textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5710450626" href="">
+        นางสาวธันย์ชนก กิจพัฒนโรจน์ (b5710450626)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 11:22:24
+            from 10.3.20.70.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [PP-PP-----]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3372315/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off"> #Thunchanok kijpattanaroj id 5710450626 problem codeTSUCY room 406
+
+number = int(input())
+count = 0 
+abc = 0
+while True:
+ number1 = number%10
+ abc =number1
+ number2 = number//10
+ total =abc+number2
+ print(total)
+ abc = abc+1
+ break
+</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5910450557" href="">
+        นางสาวพรชิตา สาตะมาน (b5910450557)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 11:22:14
+            from 10.3.20.50.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [----------]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3372306/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">n = int(input(&quot;Enter a number&quot; ))
+if n&gt;=0  :
+    print(n+n)</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5910406108" href="">
+        นายจิรายุส อาจสุรินทร์ (b5910406108)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 11:21:27
+            from 10.3.9.51.
+            Result: 
+  
+    
+      PASSED<img src="/elab_media//images/16-em-check.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [PPPPPPPPPP]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3372283/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">#Name:jirayus artsurin ID: 5910406108 Problem Code:TSUCY Room:409
+n=int(input())
+if n&gt;=0:
+    c=0
+    while n!=0:
+        a=n%10
+        b=n//10
+        n=b
+        c=c+a
+    if c//10==0:
+        print(c)
+    elif c%10==0:
+        q=c//10
+        print(q)
+    else:
+        t=0
+        while c!=0 :
+            s=c%10
+            k=c//10
+            c=k
+            t=t+s
+        if t&lt;10:
+            print(t)  
+        else:
+            p=0
+            while t!=0:
+                e=t%10
+                r=t//10
+                t=r
+                p=p+e
+            print(p)
+        </textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5710450901" href="">
+        นางสาววทันยา อัศวพิเชษฐ (b5710450901)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 11:20:35
+            from 10.3.4.183.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [----------]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3372248/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">num=int(input())
+total=0
+if num&gt;=0:
+    while num%10==num:
+        print(num)
+        total=total+num
+        num=num//10
+        print(total)
+        while total%10==a:
+        print(a)
+        total=total+a
+        a=a//10
+        print(total)
+print(total)
+        </textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5810402488" href="">
+        นายธนาธิป จิรวัชรา (b5810402488)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 11:19:11
+            from 10.3.20.203.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [----P-----]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3372184/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">#Name:Thanathip Jirawatchara ID: 5810402488 Problem Code:TSUCY Room:406
+x = int(input())
+count = 1
+b = 0
+if x &gt;= 0:
+    while True:
+        if x//10 != 0:
+            while x%(10**count) != 0:
+                a = x%(10**count)
+                x = x//10
+                count = count + 1
+                b = a+b
+                if b//10 != 0:
+                    b = (b%10)+(b//10)
+                elif b//10 == 0 and x%(10) == 0:
+                    print(b)
+        else:
+            print(x)
+            break
+else:
+    pass </textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5810451217" href="">
+        นางสาวกมลนันท์ หวังรุ่งโรจน์ (b5810451217)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 11:18:22
+            from 10.3.6.239.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [PP-PP-----]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3372149/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">#Name:Kamolnun Wangrungroj ID:5810451217 Problem code:TSUCY  Room:402
+n=int(input(&#39;&#39;))
+
+if(n&lt;0):
+    print(&#39;error&#39;)
+    
+else:
+    i=0
+    while(i&lt;=0):
+        i=0
+        n=((n//10)+(n%10))
+        j=n
+        j=((n//10)+(n%10))
+        i+=1
+        print(&#39;%d&#39;%j)
+        
+</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5810451241" href="">
+        นางสาวกัญญาณัฐ เรียวไพศาลศักดา (b5810451241)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 11:13:13
+            from 10.3.8.169.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [----------]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3371942/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off"># Name: Kanyanut Riawpaisarnsakda ID:5810451241 Problem Code: TSUCY Room: 403
+num = int(input())
+count = 0
+while num&gt;0 :
+    num%10
+    count = count+num
+    num//100
+print(count)</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5810402666" href="">
+        นายวาทยุทธ ลีลาพิพัฒน์กุล (b5810402666)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 11:13:04
+            from 10.3.4.179.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [PPPPPPPP--]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3371937/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">x = int(input())
+a =[]
+b=[]
+j=[]
+
+
+if x &lt; 0 :
+    print(&#39;Error&#39;)
+else :
+    if x == 0 :
+        print(&#39;0&#39;)
+    else :
+        for i in str(x) :
+            a.append(int(i))
+    
+    
+        for u in str(sum(a)) :
+            b.append(int(u))
+        y = sum(a)
+        k = sum(b)
+        while k &gt;= 100 :
+            for t in str(k) :
+                
+                j.append(int(t))
+            o = sum(j)
+            print(o)
+            break
+        if y &lt; 10 and y &gt; 0 :
+            print(&#39;%d&#39;%y)
+        else :
+            print(&#39;%d&#39;%k)
+        
+        
+        </textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5810451641" href="">
+        นางสาวนพรัตน์ ศรีบูระเดช (b5810451641)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 11:11:07
+            from 10.3.6.215.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [----------]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3371860/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">num = int(input(&quot;&quot;))</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5810402399" href="">
+        นางสาวจันทร์เพ็ญ พิณทอง (b5810402399)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 11:10:32
+            from 10.3.8.154.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [PPPPP-----]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3371833/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">n=int(input())
+i=1
+z=0
+b=0
+if n&gt;0:
+    while n//(10**(i-1))!=0 :
+        a=(n%(10**i))//(10**(i-1))
+        z=z+a
+        i=i+1
+    print(z)
+else:
+    pass</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5610450667" href="">
+        นางสาวมนรดา คุณบูรณโยธิน (b5610450667)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 11:10:04
+            from 10.3.20.84.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [----------]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3371807/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">
+a = int(input())
+a1 = a//100000
+a = a-a1*100000
+a2 = a//10000
+a = a-a2*10000
+a3 = a//1000
+a = a-a3*1000
+a4 = a//100
+a = a-a4*100
+a5 = a//10
+a = a-a5*10
+a = a//1
+ans = a1+a2+a3+a4+a5+a6
+if ans&gt;10 :
+    ans1 = ans//100000
+    ans = ans-ans1*100000
+    ans2 = ans//10000
+    ans = ans-ans2*10000
+    ans3 = ans//1000
+    ans = ans-ans3*1000
+    ans4 = ans//100
+    ans = ans-ans4*100
+    ans5 = ans//10
+    ans = ans-ans5*10
+    ans6 = ans//1
+    totle = ans1+ans2+ans3+ans4+ans5+ans6
+    print(totle)
+else :
+    totle = ans
+    print(totle)</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5910406329" href="">
+        นายพลาธิป วงษ์ยี่กุล (b5910406329)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 11:09:19
+            from 10.3.6.213.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [PPPPP-----]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3371778/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off"># Name: Palatip Wongyeekul ID:5910406329 Problem:TSUCY Room:402
+
+number = int(input())
+sum_num = 0
+if number&gt;=0:
+    while number!=0:
+        if number&gt;0:
+            number1 = number%10
+            sum_num = sum_num+number1
+            number = number//10
+    x = sum_num
+    print(x)
+    if x&gt;10:
+        while x&gt;0:
+            if x&gt;0:
+                x1 = x%10
+                x1 = x+x1
+                x = x//10
+        print(x1)</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5910406159" href="">
+        นายธนชัย วงษ์ทัศนีย์กร (b5910406159)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 11:07:49
+            from 10.3.6.217.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [PPPPPP----]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3371723/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">#Name: Thanachai Wongthatsaneekorn Id:5910406159 Program Code: TSUCY Room: 402
+x = int(input())
+i = True
+sum_x = 0
+while i == True:
+    while x&gt;0:
+        num = x%10
+        x = x//10
+        sum_x = sum_x+num
+        if sum_x &gt;= 10:
+            sum_x = x
+        elif sum_x &lt;= 9 :
+            i = False
+    print(sum_x)</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5910450361" href="">
+        นางสาวธนัชชา กิตติอมรภิวัฒน์ (b5910450361)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 11:07:44
+            from 10.3.20.130.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [----------]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3371720/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">number = int(input())
+number = number%100//10
+sumnumber == number
+
+print(sumnumber)</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5610450578" href="">
+        นางสาวปภัสรา แดงระกำ (b5610450578)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 11:05:42
+            from 10.3.8.166.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [----------]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3371630/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">#TSUCY  prapatsara dangragum 5610450578
+x = int(input())
+count=0
+
+b = x-1
+while (b&gt;1):
+    if b-1 :
+else (a&gt;1):
+    if a-1 :
+    count=count+1
+    a=count+1
+    b=count+1
+    
+    
+#b = a&gt;1
+#count=count+1
+#a=count+1
+#b=count+1
+#print(count)
+</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5810402356" href="">
+        นางสาวกรรณภรณ์ เปี่ยมจิตรกร (b5810402356)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 11:05:09
+            from 10.3.4.26.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [----P-----]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3371608/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">#Name:Kannaporn Peamjittakorn ID:5810402356 Problem Code:TSUCY Room:302
+num=int(input())
+n=0
+if num&gt;0 or num&lt;=9 :
+    print(num)
+else:
+    while num&gt;9 :
+        x=num%10
+        num=num//10
+        n=n+x
+        if num&gt;0 and num&lt;9 :
+            print(n)</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5910406507" href="">
+        นายอุดมการณ์ แดงยืนยง (b5910406507)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 11:03:13
+            from 10.3.20.31.
+            Result: 
+  
+    
+      PASSED<img src="/elab_media//images/16-em-check.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [PPPPPPPPPP]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3371531/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">#Name:Udomakrn Dangyuenyong ID:591040607 ProblemCode:TSUCY Room:406
+
+x=int(input())
+main=x
+carry=0
+if x&gt;9: 
+    while main&gt;9:
+        carry=carry+(x%10)
+        main=x//10
+        x=main
+    carry=carry+main
+    while carry&gt;9:
+        carry=(carry%10)+(carry//10)
+elif x&lt;10:
+    carry=x
+print(carry)
+    </textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5810402429" href="">
+        นางสาวฉัตรฤดี ทองประศรี (b5810402429)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 10:56:32
+            from 10.3.20.68.
+            Result: 
+  
+    
+      PASSED<img src="/elab_media//images/16-em-check.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [PPPPPPPPPP]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3371275/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">#Name: Chatruedee Thongprasri ID:5810402429 Problem Code:TSUCY Room:406
+n=int(input())
+n&gt;0
+if n&lt;=9:
+    print(n)    
+if n&gt;9:
+    a=(n//10)+(n%10)
+    b=(a//10)+(a%10)
+    c=(b//10)+(b%10)
+    d=(c//10)+(c%10)
+    e=(d//10)+(d%10)
+    f=(e//10)+(e%10)
+    g=(f//10)+(f%10)
+    h=(g//10)+(g%10)
+    print(h)</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5810450890" href="">
+        นางสาวพัชริดา สาเกตุ (b5810450890)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 10:54:56
+            from 10.3.6.46.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [PPPPP-----]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3371221/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">n = input(&#39;&#39;)
+sum1 = 0
+sum2 = 0
+a = []
+
+if int(n) &gt;= 0:
+    for i in n:
+        sum1 = sum1+int(i)
+        a.append(sum1)
+    
+if a[-1] &gt; 9 :
+    a = (a[-1])
+    print(a)
+
+else : print(int(a[-1]))
+    
+    </textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5810451187" href="">
+        นายอิสรพร ซื่อสัตย์ (b5810451187)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 10:54:00
+            from 10.3.20.99.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [PPPPPPPP--]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3371182/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">x = int(input())
+
+
+if x &gt; 0:
+    s = str(x)
+    a = &#39;0&#39;
+    b = &#39;1&#39;
+    c = &#39;2&#39;
+    d = &#39;3&#39;
+    e = &#39;4&#39;
+    f = &#39;5&#39;
+    g = &#39;6&#39;
+    h = &#39;7&#39;
+    i = &#39;8&#39;
+    j = &#39;9&#39;
+    
+    totala = s.count(a)
+    totala = totala*0
+    
+    totalb = s.count(b)
+    totalb = totalb*1
+    
+    totalc = s.count(c)
+    totalc = totalc*2
+    
+    totald = s.count(d)
+    totald = totald*3
+    
+    totale = s.count(e)
+    totale = totale*4
+    
+    totalf = s.count(f)
+    totalf = totalf*5
+    
+    totalg = s.count(g)
+    totalg = totalg*6
+    
+    totalh = s.count(h)
+    totalh = totalh*7
+    
+    totali = s.count(i)
+    totali = totali*8
+    
+    totalj = s.count(j)
+    totalj = totalj*9
+    
+    totals = totala+totalb+totalc+totald+totale+totalf+totalg+totalh+totali+totalj
+    
+
+    sa =str(totals)
+    sad = len(sa)
+    if sad &gt; 1:
+        s = str(totals)
+        totala = s.count(a)
+        totala = totala*0
+       
+        totalb = s.count(b)
+        totalb = totalb*1
+       
+        totalc = s.count(c)
+        totalc = totalc*2
+        
+        totald = s.count(d)
+        totald = totald*3
+       
+        totale = s.count(e)
+        totale = totale*4
+       
+        totalf = s.count(f)
+        totalf = totalf*5
+       
+        totalg = s.count(g)
+        totalg = totalg*6
+       
+        totalh = s.count(h)
+        totalh = totalh*7
+       
+        totali = s.count(i)
+        totali = totali*8
+       
+        totalj = s.count(j)
+        totalj = totalj*9    
+    
+        total = totala+totalb+totalc+totald+totale+totalf+totalg+totalh+totali+totalj
+        print(total)
+    else:
+        print(totals)
+    
+  </textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5710602361" href="">
+        นางสาวเสาวลักษณ์ บัวสาย (b5710602361)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 10:53:38
+            from 10.3.4.176.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [PPPPPPPP--]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3371169/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">#Name: Saowalak  Buasai ID: 5710602361 Problem Code: TSUCY Room:302
+
+num = int(input())
+if num &lt;= 0:
+    pass
+else:
+    keep = 0
+    kept = 0
+    while num &gt; 0 :
+        num_1 = num % 10 
+        keep += num_1
+        num = num // 10
+    if keep &lt; 10:
+        print(keep)
+    else:
+        while keep * 10 &gt; 0:
+            keep_1 = keep % 10
+            kept += keep_1
+            keep = keep // 10
+        print(kept)</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5910406124" href="">
+        นายณรงฤทธิ์ ณีวงษ์ (b5910406124)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 10:52:52
+            from 10.3.4.181.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [P--PPPPP--]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3371143/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">#Name: Narongrit Neewong ID: 5910406124  Problem Code:TSUCY Room: 303
+n = int(input())
+sumN = 0
+count = 1
+i = 0
+while n!=0:
+    a = n%(10**count)
+    a = a//(10**i)
+    if a !=0:
+        sumN+=a
+        count+=1
+        i+=1
+    if a==0:
+        break
+
+if sumN &gt; 10:
+    count = 1
+    i = 0
+    sumN2= 0
+    while sumN!=0:
+        a = sumN%(10**count)
+        a = a//(10**i)
+        if a !=0:
+            sumN2 = sumN2+a
+            count+=1
+            i+=1
+        if a==0:
+            break
+    print(sumN2)
+elif sumN ==10:
+    print(1)
+else:
+    print(sumN)</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5710450090" href="">
+        นางสาวอรวรรยา อาจารียวุฒิ (b5710450090)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 10:51:30
+            from 10.3.6.210.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [----------]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3371093/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">n=int(input())
+if n&gt;=0:
+    n1=n%10
+    n2=(n//10)%10
+    n3=(n//100)%10
+    n4=(n//1000)%10
+    n5=n//10000</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5910450425" href="">
+        นางสาวนันทิยา สายแก้ว (b5910450425)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 10:49:20
+            from 10.3.20.22.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [----------]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3371015/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off"></textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5910406167" href="">
+        นายธนเมศฐ์ ธนศิลป์พัชรกุล (b5910406167)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 10:48:01
+            from 10.3.20.47.
+            Result: 
+  
+    
+      PASSED<img src="/elab_media//images/16-em-check.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [PPPPPPPPPP]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3370976/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">#NAME: Tanamet Tansinpatcharakul ID: 5910406167 Problem Code: TSUCY Room:406
+en=input()
+num=int(en)
+if num&lt;=0:
+    pass
+else:
+    Sum=0
+    while len(en)&gt;1:
+        count=0
+        Sum=0
+        while count&lt;len(en):
+            Sum+=int(en[count])
+            count+=1
+        en = str(Sum)
+    if len(en)&lt;=1:
+        Sum=en
+    print(Sum)</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5910450506" href="">
+        นายปองณัฐ หนูทอง (b5910450506)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 10:46:55
+            from 10.3.20.118.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [P---------]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3370929/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">c=3
+n=int(input())
+
+while n&gt;0 :
+    if n&gt;0 :
+        a=n%10
+        a=n//10
+        print(a+c)
+    if n!=0:
+        break
+#นาย ปองณัฐ หนูทอง 5910450506 Code:KCWOY Room:406</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5910450221" href="">
+        นายณัฏฐพล อชิรสวัสดิ์ (b5910450221)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 10:45:55
+            from 10.3.4.192.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [----------]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3370886/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">number = int(input())
+number%10 == x
+count = 0
+while x != 0 :
+     x = x + 0 
+     number//10 = number
+     count = count + 1
+ </textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5910450484" href="">
+        นายประภาส ปานเปี่ยมเกียรติ (b5910450484)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 10:45:50
+            from 10.3.4.238.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [P----P----]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3370883/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">b = int(input())
+c = b%10
+while c&gt; 0 :
+    c = c+2
+    print(c)
+    break</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5910406353" href="">
+        นายไอศูรย์ ปิติพสิษฐ์ (b5910406353)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 10:41:16
+            from 10.3.6.147.
+            Result: 
+  
+    
+      PASSED<img src="/elab_media//images/16-em-check.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [PPPPPPPPPP]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3370733/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">#Name : isoon phitiphasit ID:5910406353 Problem code:TSUCY Room: 402
+n = int(input())
+if n &gt; 0 :
+    while True:
+        if n &gt;= 10 :
+            k = 0
+            while n &gt; 0:
+                m = n%10
+                k += m
+                n = n // 10
+            n = k
+        else :
+            print(n)
+            break</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5810402500" href="">
+        นางสาวนภิสา วารุณประภา (b5810402500)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 10:40:12
+            from 10.3.6.44.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [----P-----]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3370704/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">n = int(input())
+if n &gt; 0 :
+    if n&gt;=1 or n&lt;18 :
+        print(n)
+    </textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5910406400" href="">
+        นางสาวเมฐิฌา จันทร์ศรี (b5910406400)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 10:38:30
+            from 10.3.4.159.
+            Result: 
+  
+    
+      PASSED<img src="/elab_media//images/16-em-check.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [PPPPPPPPPP]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3370651/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">#Name:Metishar Chansri ID:5910406400 Problem Code:TSUCY Room:303
+n=int(input())
+m=0
+y=0
+while n!=0 :
+    x=n%10
+    n=n//10
+    m=m+x
+  
+    if m &gt; 9 :
+        s=m%10
+        m=m//10
+        
+        m=m+s
+        
+
+print(m)</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5910402561" href="">
+        นางสาวจิดาภา เกตสุริวงค์ (b5910402561)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 10:36:36
+            from 10.3.6.228.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [----------]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3370590/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">n=int(input())
+sum=1
+if n&gt;0 and x&gt;0:
+    N=&quot;x&quot;+&quot;x&quot;
+    while sum&gt;N:
+       sum=N
+       print(sum)</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5910450638" href="">
+        นายมหัทธวัฒน์ พรเภตรา (b5910450638)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 10:33:51
+            from 10.3.4.243.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [----------]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3370502/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">a=2+3
+b1=(2+4)+(6+8)+2
+b2=2+2
+</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5910451014" href="">
+        นายฉันทัช สายอุทยาน (b5910451014)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 10:32:03
+            from 10.3.6.232.
+            Result: 
+  
+    
+      PASSED<img src="/elab_media//images/16-em-check.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [PPPPPPPPPP]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3370444/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">n = int(input())
+sum1 = 0
+sum2 = 0
+sum3 = 0
+if n&gt;0:
+    while n&gt;0:
+        x = n%10
+        n = n//10
+        sum1 = sum1 + x
+    if sum1&gt;9 :
+        while sum1&gt;0:
+            y = sum1%10
+            sum1 = sum1//10
+            sum2 = sum2 + y
+        if sum2&lt;=9:
+            print(sum2)            
+        elif sum2&gt;9:
+            while sum2&gt;0:
+                z = sum2%10
+                sum2 = sum2//10
+                sum3 = sum3 + z
+            print(sum3)
+            
+    elif sum1&lt;=9 :
+        print(sum1)</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5710450855" href="">
+        นางสาวภารณี ยมะคุปต์ (b5710450855)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 10:31:43
+            from 10.3.6.211.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [----------]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3370437/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">n=int(input())
+count=1
+i=2
+for i&gt;=10:
+    if i&lt;=3:
+       print(&quot;5&quot;)
+    i+=1</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5710450634" href="">
+        นางสาวธารารัตน์ เส็งเรียบ (b5710450634)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 10:20:18
+            from 10.3.6.48.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [----------]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3370073/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">a=int(input())
+b=int(input())
+if a+b==7 or a+b==11:
+    print(&#39;W&#39;)
+else:
+    if a+b==2 or a+b==3 or a+b==12:
+        print(&#39;L&#39;)</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5910401025" href="">
+        นายฐิติวัฒน์ ธีรเสถียรภาคย์ (b5910401025)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 10:19:14
+            from 10.3.4.11.
+            Result: 
+  
+    
+      PASSED<img src="/elab_media//images/16-em-check.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [PPPPPPPPPP]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3370045/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">#Name: Thitiwat Teerasateanrapak ID:5910401025 Promblem Code: TSUCY Room: 302
+
+num=int(input())
+a=num
+re=0
+fire=num
+while fire&gt;9:
+    while num!=0:
+        a=num%10
+        re=a+re      
+        num=num//10
+
+    fire=re
+    num=fire
+    a=num
+    re=0
+print(fire) #fin</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5910451022" href="">
+        นางสาวณิชา สุธีสุขประเสริฐ (b5910451022)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 10:17:19
+            from 10.3.8.139.
+            Result: 
+  
+    
+      PASSED<img src="/elab_media//images/16-em-check.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [PPPPPPPPPP]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3369989/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off"># Name: Nicha Suteesukprasert ID:5910451022 Problem Code:TSUCY Room:403
+num = int(input(&quot;&quot;))
+z = num
+if num &gt;=0:
+    while True:
+        if z&lt;10:
+            print (num)
+            break
+        if z&gt;=10:
+            x = z%10
+            y = z//10
+            z = x+y
+            if z &lt;10:
+                print(z)
+                break
+        
+            </textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5910401092" href="">
+        นายปิยณัฐ กันเดช (b5910401092)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 10:12:17
+            from 10.3.20.36.
+            Result: 
+  
+    
+      PASSED<img src="/elab_media//images/16-em-check.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [PPPPPPPPPP]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3369831/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">#Name:Piyanat Kundech ID:5910401092 Problem Code:TSUCY Room:406
+x=int(input())
+a=0
+b=0
+c=0
+while x&gt;0:
+    y=x%10
+    a=y+a
+    x=x//10
+    while a&gt;0 and x==0 :
+        y=a%10
+        b=y+b
+        a=a//10
+        while b&gt;0 and a==0:
+            y=b%10
+            c=y+c
+            b=b//10            
+if a!=0 :
+    print(a)
+elif a==0 and b!=0 :
+    print(b)
+elif b==0 and c!=0:
+    print(c)</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5810601821" href="">
+        นางสาวจุไรรัตน์ ลอยร่อน (b5810601821)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 10:07:17
+            from 158.108.229.29.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [----P-----]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3369658/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">#Name:First-name Last-name ID: 5810601821 Problem code: TSUCY Room: 303
+a = int(input(&quot;&quot;))
+c = 0
+total =0
+if a&lt;=9 :
+    print(a)
+else:
+    while a&gt;= 1:
+        z=a
+        y=z % 10
+        total = total+y
+        print(total)
+        z=0
+        y=0
+    a = a-(a%10)</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5910402595" href="">
+        นางสาวชลิตา โพธิบัวทอง (b5910402595)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 10:04:15
+            from 10.3.8.144.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [----------]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3369556/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">num=int(input())
+nuum=int(input())
+if num &gt;= 0:
+        sum=num+nuum
+        if sum &gt;= 9:
+                while total&gt;=9:
+                        total=total + num
+                        print(total)
+        else:
+                print(sum)
+        </textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5810601871" href="">
+        นางสาวพรรนิภา ชายขุนทด (b5810601871)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 10:02:47
+            from 10.3.6.34.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [----------]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3369514/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">count=0
+sum=0
+n=int(input(&quot;&quot;))
+if n&lt;=0:
+    pass
+while count&gt;=0:
+    count=count+1
+    x=n%10
+    sum=sum+x
+    n=n//10
+    print(sum)
+    </textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5910402684" href="">
+        นางสาวนลินรัตน์ หนิดภักดี (b5910402684)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 10:00:12
+            from 158.108.9.30.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [PP-PP-----]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3369439/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">n=int(input())
+n1=n%10
+n2=n//10
+print (n1+n2)</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5910451235" href="">
+        นายสหภาพ อยู่โต (b5910451235)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 9:58:31
+            from 10.3.4.29.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [PP-P------]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3369394/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">p = int(input())
+
+if p // 10 != 0:
+    a = (p % 10) + (p // 10)
+    
+print(a)
+    
+
+</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5910406078" href="">
+        นางสาวจารุวรรณ ไข่แก้ว (b5910406078)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 9:57:33
+            from 10.3.4.167.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [----------]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3369363/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">x=int(input())
+if x &gt;=0:
+    x =x%5
+    x=0
+    print(&quot;Five!&quot;)
+ </textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5910402633" href="">
+        นางสาวณิชชา วีระวงษ์ (b5910402633)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 9:57:11
+            from 10.3.20.42.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [PPPPPPPP--]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3369353/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">#Name: nitcha wirawong ID:5910402633 Problem Code: TSUCY Room: 406
+n=int(input())
+m=[]
+if n&gt;=0:
+    if n==0:
+        print(&quot;0&quot;)
+    else:
+        while n!=0:
+            if n&gt;=0:
+                i=n%10
+                m.append(i)
+            n=n//10
+        if sum(m) &lt;=9:
+            print(sum(m)) 
+        else:
+            s=[]
+            j=sum(m)
+            while j!=0:
+                s.append(j%10)
+                j=j//10
+            print(sum(s))
+else:
+    while n&lt;0:
+        break
+</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5910406337" href="">
+        นางสาวพัชญ์ชัญญา จงชีวีวัฒน์ (b5910406337)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 9:56:59
+            from 10.3.6.36.
+            Result: 
+  
+    
+      PASSED<img src="/elab_media//images/16-em-check.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [PPPPPPPPPP]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3369346/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">#Name: Phatchanya Chongsheveewat ID:5910406337 Problem Code: TSUCY Room:407
+number = int(input())
+number2 = number
+total=0
+if (number&gt;0):
+    while True:
+        number1 = number2%10
+        number2 = number2//10
+        if(number1!=0):
+            total = number1 + total
+        while(total&gt;10):
+            total1 = total%10
+            total = total//10
+            if(total!=0):
+                total = total1 + total
+                break
+        if(number2==0 and total&lt;10):         
+            print(total)
+            break</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5810400540" href="">
+        นายชัชภัค ไชยศิวามงคล (b5810400540)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 9:55:45
+            from 10.3.6.32.
+            Result: 
+  
+    
+      PASSED<img src="/elab_media//images/16-em-check.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [PPPPPPPPPP]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3369317/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">a=int(input())
+b=str(a)
+ans=0
+p=0
+m=0
+if a&lt;0 :
+    pass
+else:
+    for i in b:
+        x=int(i)
+        p+=x
+        z=str(p)
+    for t in z:
+        v=int(t)
+        m+=v
+        s=str(m)
+    for u in s:
+        r=int(u)
+        ans+=r
+    print(ans)</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5810400604" href="">
+        นายเพียว วิศรุตานันท์ (b5810400604)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 9:53:53
+            from 10.3.6.237.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [-PP-P-----]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3369256/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">n = int(input())
+x = str(n)
+ans = 0
+for i in x :
+    y = int(i)
+    if y != 0 :
+        ans = ans+y
+        print(ans)
+        </textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5810450041" href="">
+        นางสาวฉัตรอลีนา กุลณิชอภินันท์ (b5810450041)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 9:53:33
+            from 10.3.20.72.
+            Result: 
+  
+    
+      PASSED<img src="/elab_media//images/16-em-check.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [PPPPPPPPPP]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3369250/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">num = int(input())
+sum = 0
+while(num&gt;0):
+    x = num%10
+    sum = sum+x
+    
+    num=num//10
+while(sum&gt;9):
+    y = sum%10
+    z = sum//10
+    sum = y+z
+    
+    
+print(sum)</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5910451049" href="">
+        นายธนิก ทองสตา (b5910451049)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 9:52:33
+            from 10.3.20.110.
+            Result: 
+  
+    
+      PASSED<img src="/elab_media//images/16-em-check.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [PPPPPPPPPP]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3369215/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">#Name:Tanik Thongsata ID:5910451049 Problem Code:TSUCY Room:406
+n=int(input(&quot;&quot;))
+sum=0
+a=0
+
+while n &gt;0:  
+    a=n%10
+    sum=sum+a
+    n=n//10
+       
+if sum &gt; 9:  
+    while sum &gt;0:  
+        b=sum%10
+        sum=sum//10
+        sum=sum+b
+        if sum &lt;10:  
+            print(sum)
+            break
+else:  
+    print(sum)</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5710450031" href="">
+        นางสาวชริษา ภูธิมงคลกุล (b5710450031)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 9:49:43
+            from 10.3.6.247.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [----------]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3369123/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">n = int(input())
+m = a+b+c
+if m==n :
+    print()</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5910406191" href="">
+        นางสาวนลินี พ่วงเขียว (b5910406191)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 9:47:58
+            from 10.3.20.157.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [PPPPPPPP--]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3369062/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">#Name: nalinee phuangkhiaw ID: 5910406191 Problem Code: TSUCY Room: 404
+
+no = int(input())
+total = 0
+all_t =0
+
+if no&gt;=0:
+        while no!=0:
+                no2=no%10
+                total=total+no2
+                no = no//10
+        if total&lt;=9:
+                print(total)
+        else:
+                while total!=0:
+                        total2=total%10
+                        all_t=all_t+total2
+                        total = total//10
+                print(all_t)
+else:
+        print(&quot;ERROR&quot;)
+
+    
+
+            
+        </textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5810402453" href="">
+        นางสาวฐิติรัตน์ เสาวนะ (b5810402453)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 9:45:33
+            from 10.3.20.122.
+            Result: 
+  
+    
+      PASSED<img src="/elab_media//images/16-em-check.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [PPPPPPPPPP]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3368977/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">n = int(input())
+a = 0
+while n&gt;0:
+    s = n%10
+    n = n//10
+    a = a+s
+if a&lt;10:
+    print(a)
+else:
+    b = 0
+    while a&gt;0:
+        t = a%10
+        a = a//10
+        b = b + t
+    if b&lt;10:
+        print(b)
+    else:
+        c = 0
+        while b&gt;0:
+            v = b%10
+            b = b//10
+            c = c+v
+        print(c)
+        
+    </textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5610450438" href="">
+        นางสาวกุลวดี ศรีอุทัยวงศ์ (b5610450438)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 9:41:20
+            from 158.108.230.44.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [----------]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3368844/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">m= 0
+while True:
+    a = int(input())
+    b = int(input())
+    if a &gt; m and b &gt;m  :
+        s = (a+b)
+        
+    print(s)</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5910450492" href="">
+        นางสาวปริญญา บุญจันทร์ (b5910450492)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 9:40:56
+            from 158.108.225.173.
+            Result: 
+  
+    
+      PASSED<img src="/elab_media//images/16-em-check.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [PPPPPPPPPP]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3368831/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">#Name : Parinya Boongun ID:5910450492 Problem Code:TSUCY Room:406
+
+n=int(input())
+savepoint=0
+b=10
+if n &gt;= 0 and n &lt;=9 :
+    print(n)
+if n &gt; 9:
+    while n &gt; 0  :
+        z=n%10
+        n=n//10
+        savepoint=savepoint+z
+    if savepoint &lt;= 9 :
+        print(savepoint)
+    else :
+        while b &gt; 9 :
+            b=0
+            z=savepoint%10 
+            savepoint=savepoint//10
+            b=b+z+savepoint
+        print(b)</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5910450379" href="">
+        นางสาวธนัชชา บัวจันทร์ (b5910450379)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 9:39:47
+            from 10.3.8.170.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [P---P--P--]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3368800/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">n = int(input())
+if n &lt;= 0 :
+    print(&quot;ERROR&quot;)
+a = n % 10
+b = n % a
+print(a + b)</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5910406523" href="">
+        นายเอกรัตน์ ศักดิ์ถาวรเลิศ (b5910406523)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 9:35:22
+            from 10.3.8.165.
+            Result: 
+  
+    
+      PASSED<img src="/elab_media//images/16-em-check.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [PPPPPPPPPP]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3368670/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">#Name:Eakarat Saktawornlerd ID:5910406523 Problemcode:TSUCY Room:403
+
+n=int(input())
+while n&gt;=0 :
+    x=0
+    b=0
+    while n&gt;0 :
+        a=n%10
+        b+=a
+        n=n//10
+    if n==0 and b&lt;=9 :
+        break
+    if b&gt;9 :
+        n=b
+print(b)</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5910406205" href="">
+        นางสาวนัทธมน หัตถเสรีพงษ์ (b5910406205)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 9:32:55
+            from 10.3.20.135.
+            Result: 
+  
+    
+      PASSED<img src="/elab_media//images/16-em-check.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [PPPPPPPPPP]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3368572/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">#Nattamon Hattasereepong 5910406205 TSUCY 406
+num = int(input())
+if num&gt;0 :
+    plus=10
+    while plus//10&gt;=1 :
+        plus=0
+        while num&gt;0 :
+            result=num%10
+            num=num//10
+            plus=result+plus
+        num=plus
+    print(plus)  </textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5910406213" href="">
+        นายนันทวัฒน์ สูตรสุข (b5910406213)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 9:20:16
+            from 10.3.9.17.
+            Result: 
+  
+    
+      PASSED<img src="/elab_media//images/16-em-check.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [PPPPPPPPPP]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3368126/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">x = int(input())
+count = 10
+if x &gt; 0:
+    while x &gt;= count :
+        v = x%10
+        c = x//10
+        x = c+v
+    print(x)        
+    </textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+    
+    <li><a class="std_id" id="b5710401943" href="">
+        นางสาวมาริศนันท์ เชี่ยวชาญ (b5710401943)</a> 
+    (<span class="score">Score: 0/0</span>)<br/>
+        Submitted at Oct 09 2016 9:15:34
+            from 10.3.20.137.
+            Result: 
+  
+    
+      FAILED<img src="/elab_media//images/16-em-cross.png"/>
+     
+  
+  
+  
+    <span title="P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case">
+      [----------]
+    </span>
+  
+
+  
+
+
+    <form class="grading" method="post" action="/elab/instr/grade/3367943/">
+        <div class="submission">
+          <h1>ผลบวกของหลักเลขจนเหลือหลักเดียว TSUCY</h1>
+<p>
+<fieldset>
+<pre><code class="source"><textarea class="codeblank" cols="51" name="b1" rows="15" wrap="off">n=int(input())
+x=str()
+y=1
+c=0 
+while c&lt;=n :
+    x=int(c)
+    y=x+x
+    print(y)
+    break
+    
+</textarea></code></pre>
+</fieldset>
+</p>
+	</div>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Reset" />
+    </form>
+    </li>
+    <br/>
+    
+
+</ul>
+
+        
+    </div>
+    <!-- END Content -->
+
+    
+<script>
+  $(document).ready(function()
+  {
+    // prevent editable blanks in submission
+    // note that this should be done before score textboxes are added
+    $(".submission input").attr("readOnly",true);
+    $(".submission textarea").attr("readOnly",true);  
+
+    // toggle student submission when the student name is clicked
+    $("a.std_id").click(function(event) 
+    {
+      event.preventDefault();
+      $(this).nextAll(".grading").slideToggle("normal");
+    });
+
+    // add a score box after each text blank
+    $(".textblank").each(function(i,o) 
+    {
+      score_box = document.createElement("input");
+      $(score_box).attr("type","text").attr("size","1").attr("class","scorebox");
+      $(score_box).attr("name","score_" + o.name);
+      $(o).after(score_box);
+    });
+
+    // Compute total score when a form is submitted
+    $("form.grading").submit(function(event)
+    {
+      event.preventDefault();
+      $form = $(this);
+      $score = $form.parent().find(".score");
+      $.post($form.attr("action"), $form.serialize(), function(data)
+      {
+        scores = data[0];
+        summary = data[1];
+        error = data[2];
+        if (error)
+          alert("Entered score is invalid or out of range");
+        else {
+          if($("#auto-hide-checkbox").attr("checked"))
+            $form.slideUp("normal");
+        }
+        $score.html(summary);
+        $(".scorebox",$form).val('');
+        for (bid in scores)
+        {
+          $box = $form.find(".scorebox[name='score_" + bid + "']");
+          $box.val(scores[bid]);
+        }
+      }, "json");
+    });
+
+    // Add blanks' solutions as tooltips (for manual grading)
+    
+
+    // Update score boxes with current scores
+    scores = [["b5610450390", null], ["b5610450438", null], ["b5610450497", null], ["b5610450578", null], ["b5610450667", null], ["b5610450675", null], ["b5610602181", null], ["b5710401811", null], ["b5710401889", null], ["b5710401943", null], ["b5710401951", null], ["b5710450031", null], ["b5710450065", null], ["b5710450090", null], ["b5710450502", null], ["b5710450511", null], ["b5710450537", null], ["b5710450561", null], ["b5710450588", null], ["b5710450626", null], ["b5710450634", null], ["b5710450855", null], ["b5710450871", null], ["b5710450901", null], ["b5710602183", null], ["b5710602361", null], ["b5810400531", null], ["b5810400540", null], ["b5810400566", null], ["b5810400574", null], ["b5810400604", null], ["b5810402348", null], ["b5810402356", null], ["b5810402381", null], ["b5810402399", null], ["b5810402402", null], ["b5810402429", null], ["b5810402453", null], ["b5810402470", null], ["b5810402488", null], ["b5810402500", null], ["b5810402615", null], ["b5810402666", null], ["b5810450041", null], ["b5810450105", null], ["b5810450164", null], ["b5810450539", null], ["b5810450679", null], ["b5810450890", null], ["b5810450911", null], ["b5810451187", null], ["b5810451217", null], ["b5810451241", null], ["b5810451314", null], ["b5810451560", null], ["b5810451608", null], ["b5810451641", null], ["b5810451781", null], ["b5810452086", null], ["b5810452108", null], ["b5810452388", null], ["b5810601821", null], ["b5810601839", null], ["b5810601863", null], ["b5810601871", null], ["b5810601928", null], ["b5810601944", null], ["b5910400321", null], ["b5910400401", null], ["b5910401025", null], ["b5910401033", null], ["b5910401076", null], ["b5910401084", null], ["b5910401092", null], ["b5910401165", null], ["b5910402561", null], ["b5910402595", null], ["b5910402609", null], ["b5910402633", null], ["b5910402684", null], ["b5910406043", null], ["b5910406051", null], ["b5910406078", null], ["b5910406086", null], ["b5910406108", null], ["b5910406124", null], ["b5910406132", null], ["b5910406141", null], ["b5910406159", null], ["b5910406167", null], ["b5910406191", null], ["b5910406205", null], ["b5910406213", null], ["b5910406221", null], ["b5910406264", null], ["b5910406302", null], ["b5910406329", null], ["b5910406337", null], ["b5910406345", null], ["b5910406353", null], ["b5910406361", null], ["b5910406400", null], ["b5910406418", null], ["b5910406442", null], ["b5910406507", null], ["b5910406523", null], ["b5910450107", null], ["b5910450115", null], ["b5910450131", null], ["b5910450140", null], ["b5910450158", null], ["b5910450212", null], ["b5910450221", null], ["b5910450247", null], ["b5910450271", null], ["b5910450336", null], ["b5910450361", null], ["b5910450379", null], ["b5910450425", null], ["b5910450441", null], ["b5910450476", null], ["b5910450484", null], ["b5910450492", null], ["b5910450506", null], ["b5910450557", null], ["b5910450581", null], ["b5910450638", null], ["b5910450697", null], ["b5910451006", null], ["b5910451014", null], ["b5910451022", null], ["b5910451049", null], ["b5910451081", null], ["b5910451162", null], ["b5910451235", null]]
+    for (i in scores)
+    {
+      sid = scores[i][0];
+      scr_list = scores[i][1];
+      $form = $(".std_id#"+sid).parent().children("form.grading:first");
+      for (bid in scr_list)
+      {
+        $box = $form.find(".scorebox[name='score_" + bid + "']");
+        $box.val(scr_list[bid]);
+      }
+    }
+    $("#show-all-button").click(function () {
+      $(".grading").show();
+    });
+  });
+</script>
+
+</div>
+<!-- END Container -->
+
+</body>
+</html>
