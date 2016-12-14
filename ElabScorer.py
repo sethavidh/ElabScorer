@@ -5,7 +5,10 @@ License: CC-BY-SA
 
 1st version: take a saved HTML file and extract username/graded score for 
  each question. The HTML file is saved from Elab webpage.
- 
+TODO: - refactor into function
+      - works with multiple files
+      - combine set
+      - output scores
 '''
 from bs4 import BeautifulSoup
 
