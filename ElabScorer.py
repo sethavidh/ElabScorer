@@ -13,8 +13,61 @@ current version:
 TODO: - better way to get filenames and problem names
 
 '''
+import os
+import sys
 from bs4 import BeautifulSoup
 
+def readConf():
+    try:
+        conf_file = open('scorer.conf', 'r', encoding='utf-8')
+    except:
+        print('Cannot open scorer.conf file')
+        sys.exit(1)
+    problem_d = {}
+    problem_order = []
+    l_num = 0
+    std_file = ''
+    for line in conf_file.readlines():
+        l_num += 1
+        line = line.strip()
+        if len(line) == 0 or line[0] == '#':
+            continue
+        ls = line.split(':')
+        if ls[0] =='STD':
+            std_file = ls[1]
+            continue
+        try:
+            if ls[0] not in problem_order:
+                problem_order.append(ls[0])
+            if ls[0] in problem_d:
+                problem_d[ls[0]].append(ls[1])
+            else:
+                problem_d[ls[0]] = [ls[1]]
+        except:
+            print('scorer.conf is in wrong format at line', l_num)
+            sys.exit(2)
+    
+    if std_file == '' or os.path.isfile(std_file) == False:
+        print("No student file")
+        sys.exit(4)
+    
+    print('Student file is', std_file)
+    print('Problem List:')
+    max_name_len = max([len(x) for x in problem_order])
+    for x in problem_order:
+        fmt = '%'+'%d' % max_name_len + 's' 
+        print(fmt % (x), end=': ')
+        indent = max_name_len+2
+        i = 0
+        for y in problem_d[x]:
+            if not os.path.isfile(y):
+                print('No problem file: ', y)
+                sys.exit(5)
+            if i == 0: print(y)
+            else: print(' ' * indent + '%s' % y)
+            i += 1
+    return std_file, problem_d, problem_order
+        
 def PCounter(s):
     return s.count('P')
 
@@ -69,61 +122,40 @@ def extractStdScores(file, scorer=PCounter):
 def insertScore(d, score_ls, problem_name):
     for rec in score_ls:
         d[rec[0]][problem_name] = rec[-1]
-        
-stds_ls = readAllStds("ALL-AB-Table 1.csv")
+
+try:
+    os.chdir(sys.argv[1])
+except:
+    print('Cannot change to directory', sys.argv[1])
+    sys.exit(3)
+    
+std_file, problem_d, problem_order = readConf()
+stds_ls = readAllStds(std_file)
 all_score = {}
 for std in stds_ls:
     all_score[std[0]] = {'name':std[1]}
 
-single_digit_s1 = extractStdScores("591_set1_midterm_singledigit.html")
-single_digit_s2 = extractStdScores("591_set2_midterm_singledigit.html")
-coin_s1 = extractStdScores("591_set1_midterm_coin.html")
-coin_s2 = extractStdScores("591_set2_midterm_coin.html")
-skyline_s1 = extractStdScores("591_set1_midterm_skyline.html")
-skyline_s2 = extractStdScores("591_set2_midterm_skyline.html")
-threefive_s1 = extractStdScores("591_set1_midterm_threefive.html")
-threefive_s2 = extractStdScores("591_set2_midterm_threefive.html")
-craps_s1 = extractStdScores("591_set1_midterm_craps.html")
-craps_s2 = extractStdScores("591_set2_midterm_craps.html")
+for problem_name in problem_order:
+    for file_name in problem_d[problem_name]:
+        score_ls = extractStdScores(file_name)
+        insertScore(all_score, score_ls, problem_name)
 
-insertScore(all_score, single_digit_s1, 'Single_Digit')
-insertScore(all_score, single_digit_s2, 'Single_Digit')
-insertScore(all_score, coin_s1, 'Coin')
-insertScore(all_score, coin_s2, 'Coin')
-insertScore(all_score, skyline_s1, 'Skyline')
-insertScore(all_score, skyline_s2, 'Skyline')
-insertScore(all_score, threefive_s1, 'Three and Five')
-insertScore(all_score, threefive_s2, 'Three and Five')
-insertScore(all_score, craps_s1, 'Craps')
-insertScore(all_score, craps_s2, 'Craps')
-
-out = [['ID', 'Name','Total', 'Single_Digit','Coin','Skyline','Three and Five', 'Craps']]
+header = ['ID','Name','Total']
+for problem_name in problem_order:
+    header.append(problem_name)
+    
+out = [header]
 for std, name in stds_ls:
-    rec = [std, name]
-    try:
-        rec.append(all_score[std]['Single_Digit'])
-    except:
-        rec.append('')
-    try:
-        rec.append(all_score[std]['Coin'])
-    except:
-        rec.append('')    
-    try:
-        rec.append(all_score[std]['Skyline'])
-    except:
-        rec.append('')
-    try:
-        rec.append(all_score[std]['Three and Five'])
-    except:
-        rec.append('')
-    try:
-        rec.append(all_score[std]['Craps'])
-    except:
-        rec.append('')
-    total = 0
-    for i in range(1,6):
+    rec = [std,name]
+    for problem_name in problem_order:
         try:
-            total += rec[i]
+            rec.append(all_score[std][problem_name])
+        except:
+            rec.append('')
+    total = 0
+    for i in range(len(problem_order)):
+        try:
+            total += rec[2+i]
         except:
             pass
     rec.insert(2, total)
