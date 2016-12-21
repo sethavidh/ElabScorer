@@ -10,19 +10,21 @@ current version:
 - grade by scorer
 - output table of id and scores
 
-TODO: - better way to get filenames and problem names
+TODO: - refactor
 
 '''
 import os
 import sys
 from bs4 import BeautifulSoup
+import scorer
 
 def readConf():
-    try:
+    try: #open config file
         conf_file = open('scorer.conf', 'r', encoding='utf-8')
     except:
         print('Cannot open scorer.conf file')
         sys.exit(1)
+        
     problem_d = {}
     problem_order = []
     l_num = 0
@@ -33,16 +35,22 @@ def readConf():
         if len(line) == 0 or line[0] == '#':
             continue
         ls = line.split(':')
-        if ls[0] =='STD':
+        if ls[0] =='STD': #STD file
             std_file = ls[1]
             continue
-        try:
-            if ls[0] not in problem_order:
-                problem_order.append(ls[0])
-            if ls[0] in problem_d:
-                problem_d[ls[0]].append(ls[1])
+        try: #extract problem name, file, and scorer
+            prob_name = ls[0]
+            if prob_name not in problem_order:
+                problem_order.append(prob_name)
+            if prob_name in problem_d:
+                problem_d[prob_name]['file'].append(ls[1])
             else:
-                problem_d[ls[0]] = [ls[1]]
+                problem_d[prob_name] = {}
+                problem_d[prob_name]['file'] = [ls[1]]
+                if len(ls) == 3: # has scorer
+                    problem_d[prob_name]['grader'] = ls[2]
+                else:
+                    problem_d[prob_name]['grader'] = ''
         except:
             print('scorer.conf is in wrong format at line', l_num)
             sys.exit(2)
@@ -50,32 +58,37 @@ def readConf():
     if std_file == '' or os.path.isfile(std_file) == False:
         print("No student file")
         sys.exit(4)
-    
+    print(problem_d)
     print('Student file is', std_file)
     print('Problem List:')
     max_name_len = max([len(x) for x in problem_order])
     for x in problem_order:
         fmt = '%'+'%d' % max_name_len + 's' 
         print(fmt % (x), end=': ')
+        print(problem_d[x]['grader'])
         indent = max_name_len+2
         i = 0
-        for y in problem_d[x]:
+        for y in problem_d[x]['file']:
             if not os.path.isfile(y):
                 print('No problem file: ', y)
                 sys.exit(5)
-            if i == 0: print(y)
-            else: print(' ' * indent + '%s' % y)
+            print(' ' * indent + '%s' % y)
             i += 1
     return std_file, problem_d, problem_order
         
 def PCounter(s):
     return s.count('P')
-
 def AllP(s):
     for x in s:
         if x != 'P': return 0
     return 1
-
+def PCCounter(s):
+    return s.count('P') + s.count('C')
+def PCSCounter(s):
+    return s.count('P') + s.count('C') + s.count('S')
+def PSCounter(s):
+    return s.count('P') + s.count('S')
+    
 def readAllStds(file):
     std_file = open(file, "r", encoding='utf-8')
     rec_list = std_file.readlines()
@@ -85,18 +98,25 @@ def readAllStds(file):
         all_std.append((item_list[1], item_list[2]))
     return all_std
 
-def extractStdScores(file, scorer=PCounter):
+def extractStdScores(file, grader=PCounter):
     file = open(file, "r", encoding="utf-8")
     bsObj = BeautifulSoup(file.read())
     std_list = bsObj.ul.findAll('li')
     std_table = []
+    try:
+        grader = eval(grader)
+    except:
+        pass
     
+    print('Grading file', file.name, end=' ')
+    print('using', grader.__name__)
     assignment = bsObj.find('div', id='content').b.nextSibling
     lab, problem = [x.strip() for x in assignment.split('>')]
     s = lab.split()
     lab = s[0] + ' ' + s[1]
     lab_set = s[2] + ' ' + s[3]
-                     
+    
+
     for li in std_list:
         std_name, std_id = li.find('a', class_='std_id').get_text().split('(')
         std_name = std_name.strip()
@@ -112,7 +132,7 @@ def extractStdScores(file, scorer=PCounter):
         res = li.find('span', title='P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case').get_text()
         res = res.strip().strip('[').strip(']')
         
-        score = scorer(res)
+        score = grader(res)
         record = [std_id, std_name, submit_time, submit_ip,lab, lab_set, problem, res, score]
     
         std_table.append(record)
@@ -136,8 +156,11 @@ for std in stds_ls:
     all_score[std[0]] = {'name':std[1]}
 
 for problem_name in problem_order:
-    for file_name in problem_d[problem_name]:
-        score_ls = extractStdScores(file_name)
+    for file_name in problem_d[problem_name]['file']:
+        if problem_d[problem_name]['grader']:
+            score_ls = extractStdScores(file_name, problem_d[problem_name]['grader'])
+        else:
+            score_ls = extractStdScores(file_name)
         insertScore(all_score, score_ls, problem_name)
 
 header = ['ID','Name','Total']
