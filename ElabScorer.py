@@ -167,7 +167,8 @@ header = ['ID','Name','Total']
 for problem_name in problem_order:
     header.append(problem_name)
     
-out = [header]
+out = []
+h_str = ','.join(header)
 for std, name in stds_ls:
     rec = [std,name]
     for problem_name in problem_order:
@@ -185,10 +186,13 @@ for std, name in stds_ls:
     out.append(rec)
     
 out_file = open('all_problems.csv', 'w', encoding='utf-8')
+print(h_str, file=out_file)
 for rec in out:
-    for x in rec:
-        print(x, end=',',file=out_file)
-    print('', file=out_file)
+    c = str(rec[0])
+    for i in range(1,len(rec)):
+        c = c+','+str(rec[i])
+    print(c,file=out_file)
+
 
 
 
