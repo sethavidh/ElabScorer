@@ -77,25 +77,37 @@ def readConf():
     return std_file, problem_d, problem_order
         
 def PCounter(s):
-    return s.count('P')
+    return s.count('P')/len(s)
 def AllP(s):
     for x in s:
         if x != 'P': return 0
     return 1
 def PCCounter(s):
-    return s.count('P') + s.count('C')
+    return (s.count('P') + s.count('C'))/len(s)
 def PCSCounter(s):
-    return s.count('P') + s.count('C') + s.count('S')
+    return (s.count('P') + s.count('C') + s.count('S'))/len(s)
 def PSCounter(s):
-    return s.count('P') + s.count('S')
-    
+    return (s.count('P') + s.count('S'))/len(s)
+def First80P(s):
+    percent = (s.count('P')+s.count('C'))/len(s)
+    first80 = s[0:int(0.8*len(s))]
+    if percent >= 0.8 and (not '-' in first80):
+        return percent
+    else:
+        return 0
+def NoLastP(s):
+    if s.count('-') == len(s)-1 and s.endswith('P'): #no score if only last P
+        return 0
+    else:
+        return (s.count('P')+0.5*s.count('S'))/len(s) 
+
 def readAllStds(file):
     std_file = open(file, "r", encoding='utf-8')
     rec_list = std_file.readlines()
     all_std = []
     for rec in rec_list:
         item_list = rec.split(',')
-        all_std.append((item_list[1], item_list[2]))
+        all_std.append((item_list[0].strip(), item_list[1].strip()))
     return all_std
 
 def extractStdScores(file, grader=PCounter):
@@ -111,7 +123,7 @@ def extractStdScores(file, grader=PCounter):
     print('Grading file', file.name, end=' ')
     print('using', grader.__name__)
     assignment = bsObj.find('div', id='content').b.nextSibling
-    lab, problem = [x.strip() for x in assignment.split('>')]
+    lab, problem = [x.strip() for x in assignment.split('\u2192')]
     s = lab.split()
     lab = s[0] + ' ' + s[1]
     lab_set = s[2] + ' ' + s[3]
@@ -132,7 +144,7 @@ def extractStdScores(file, grader=PCounter):
         res = li.find('span', title='P = Pass, - = Fail, S = Incorrect Spacing, C = Incorrect Case').get_text()
         res = res.strip().strip('[').strip(']')
         
-        score = grader(res)
+        score = grader(res) *10.0
         record = [std_id, std_name, submit_time, submit_ip,lab, lab_set, problem, res, score]
     
         std_table.append(record)
