@@ -81,21 +81,46 @@ def PCounter(s):
 def AllP(s):
     for x in s:
         if x != 'P': return 0
-    return 1
+    return len(s)
 def PCCounter(s):
     return s.count('P') + s.count('C')
 def PCSCounter(s):
     return s.count('P') + s.count('C') + s.count('S')
 def PSCounter(s):
     return s.count('P') + s.count('S')
-    
+def First80P(s):
+    l = len(s)
+    p = l*4//5
+    first = s[:p]
+    last = s[p:]
+    sc = first.count('P')
+    if sc < len(first):
+        return 0
+    return sc+last.count('P')
+def Count80P(s):
+    l = len(s)
+    p = l*4//5
+    first = s[:p]
+    last = s[p:]
+    sc = first.count('P')
+    if sc == 0:
+        return 0
+    return sc+last.count('P')
+def NoLastP(s):
+    first = s[:-1]
+    sc = first.count('P')
+    if sc == 0:
+        return 0
+    if s[-1] == 'P':
+        sc += 1
+    return sc
 def readAllStds(file):
     std_file = open(file, "r", encoding='utf-8')
     rec_list = std_file.readlines()
     all_std = []
     for rec in rec_list:
         item_list = rec.split(',')
-        all_std.append((item_list[1], item_list[2]))
+        all_std.append((item_list[0], item_list[1].strip()))
     return all_std
 
 def extractStdScores(file, grader=PCounter):
@@ -103,15 +128,12 @@ def extractStdScores(file, grader=PCounter):
     bsObj = BeautifulSoup(file.read())
     std_list = bsObj.ul.findAll('li')
     std_table = []
-    try:
-        grader = eval(grader)
-    except:
-        pass
+    grader = eval(grader)
     
     print('Grading file', file.name, end=' ')
     print('using', grader.__name__)
     assignment = bsObj.find('div', id='content').b.nextSibling
-    lab, problem = [x.strip() for x in assignment.split('>')]
+    lab, problem = [x.strip() for x in assignment.split('\u2192')]
     s = lab.split()
     lab = s[0] + ' ' + s[1]
     lab_set = s[2] + ' ' + s[3]
@@ -163,7 +185,7 @@ for problem_name in problem_order:
             score_ls = extractStdScores(file_name)
         insertScore(all_score, score_ls, problem_name)
 
-header = ['ID','Name','Total']
+header = ['ID','Name']
 for problem_name in problem_order:
     header.append(problem_name)
     
@@ -176,13 +198,7 @@ for std, name in stds_ls:
             rec.append(all_score[std][problem_name])
         except:
             rec.append('')
-    total = 0
-    for i in range(len(problem_order)):
-        try:
-            total += rec[2+i]
-        except:
-            pass
-    rec.insert(2, total)
+
     out.append(rec)
     
 out_file = open('all_problems.csv', 'w', encoding='utf-8')
@@ -192,6 +208,8 @@ for rec in out:
     for i in range(1,len(rec)):
         c = c+','+str(rec[i])
     print(c,file=out_file)
+    out_file.flush()
+out_file.close()
 
 
 
