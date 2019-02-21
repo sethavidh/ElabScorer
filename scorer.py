@@ -8,7 +8,7 @@ Created on Wed Dec 21 14:54:32 2016
 """
 
 def symbolScorer(s):
-    if s.count('-') == 9 and s.endswith('P'): #no score if only last P
+    if s.count('-') == len(s)-1 and s.endswith('P'): #no score if only last P
         return 0
     else:
         return s.count('P') + 0.75 * s.count('S')
